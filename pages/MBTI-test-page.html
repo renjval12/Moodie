@@ -12,17 +12,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200;300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/d4306395b0.js" crossorigin="anonymous"></script>
-    <style>
-        .hide {
-            display: none;
-        }
-
-        .show {
-            display: block
-        }
-    </style>
-
-
 </head>
 
 <body>
@@ -32,22 +21,22 @@
             <h1 id="moodie-name">Moodie</h1>
             <section class="header-nav-links">
                 <a class="nav-link header-nav-links" href="/index.html">Home</a></li>
-                <a class="nav-link header-nav-links" href="/pchoice1s/about.html">About Us</a></li>
-                <a class="nav-link header-nav-links" href="/pchoice1s/personality-test-pchoice1.html">Choose a Test</a>
+                <a class="nav-link header-nav-links" href="/pages/about.html">About Us</a></li>
+                <a class="nav-link header-nav-links" href="/pages/personality-test-page.html">Choose a Test</a>
                 </li>
-                <a class="nav-link header-nav-links" href="/pchoice1s/contact-us.html">Contact</a></li>
+                <a class="nav-link header-nav-links" href="/pages/contact-us.html">Contact</a></li>
             </section>
 
-            <form class="search-bar" action="/action_pchoice1.php">
+            <form class="search-bar" action="/action_page.php">
                 <input id="search-input" type="text" name="search" placeholder="Search...">
                 <button id="search-btn" type="submit"><i class="fas fa-search" aria-hidden="true"></i></button>
             </form>
-            <a class="nav-link header-nav-links login" href="/pchoice1s/login.html">Login</a>
+            <a class="nav-link header-nav-links login" href="/pages/login.html">Login</a>
         </nav>
     </header>
     <main>
         <section id="mbti-intro">
-            <h1 class="main-heading mbti-test-heading">Myers Briggs Type Indicator Test</h1>
+            <h1 class="top-of-page-heading mbti-test-heading">Myers Briggs Type Indicator Test</h1>
             <h2 class="section-heading">The Test</h2>
             <p class="section-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem inventore
                 eveniet iusto. Distinctio vitae
@@ -59,90 +48,58 @@
                 iure sapiente, maxime,
                 doloribus,
                 recusandae perspiciatis mollitia porro qui a.</p>
-            <button onclick="document.querySelector('#form1').classList.toggle('show')">Start</button>
+            <button onclick="document.querySelector('#form1').classList.remove('hide')">Start</button>
         </section>
-        <form id="form1">
-            <p>My friends, family, and co-workers describe me as a perfectionist.</p>
-            <label><input type="radio" name="choice1" id="Strongly Agree1" value="1" />Strongly Agree</label>
-            <label><input type="radio" name="choice1" id="Agree1" value="2" />Agree</label>
-            <label><input type="radio" name="choice1" id="Disagree1" value="3" />Disagree</label>
-            <label><input type="radio" name="choice1" id="Strongly Disagree1" value="4" />Somewhat Agree</label>
 
-            <p>My emotions tend to cloud my judgement</p>
-            <label><input type="radio" name="choice2" id="Strongly Agree2" value="1" />Strongly Agree</label>
-            <label><input type="radio" name="choice2" id="Agree2" value="2" />Agree</label>
-            <label><input type="radio" name="choice2" id="Disagree2" value="3" />Disagree</label>
-            <label><input type="radio" name="choice2" id="Strongly Disagree2" value="4" />Somewhat Agree</label>
+        <form id="form1" class="hide">
+            <p>My friends and family consider me a perfectionist.</p>
+            <label><input type="radio" name="choice1" id="agree" value="1" />Agree</label>
+            <label><input type="radio" name="choice1" id="neutral" value="2" />Neutral</label>
+            <label><input type="radio" name="choice1" id="disagree" value="3" />Disagree</label>
 
-            <p>Many would describe me as a wallflower</p>
-            <label><input type="radio" name="choice3" id="Strongly Agree3" value="1" />Strongly Agree</label>
-            <label><input type="radio" name="choice3" id="Agree3" value="2" />Agree</label>
-            <label><input type="radio" name="choice3" id="Disagree3" value="3" />Disagree</label>
-            <label><input type="radio" name="choice3" id="Strongly Disagree3" value="4" />Somewhat Agree</label>
+            <p>I consider myself a wallflower at parties.</p>
+            <label><input type="radio" name="choice2" id="agree" value="1" />Agree</label>
+            <label><input type="radio" name="choice2" id="neutral" value="2" />Neutral</label>
+            <label><input type="radio" name="choice2" id="disagree" value="3" />Disagree</label>
 
-            <p>I am uncomfortable with being in a crowd</p>
-            <label><input type="radio" name="choice4" id="Strongly Agree4" value="1" />Strongly Agree</label>
-            <label><input type="radio" name="choice4" id="Agree4" value="2" />Agree</label>
-            <label><input type="radio" name="choice4" id="Disagree4" value="3" />Disagree</label>
-            <label><input type="radio" name="choice4" id="Strongly Disagree4" value="4" />Somewhat Agree</label>
+            <p>I am uncomfortable in crowds.</p>
+            <label><input type="radio" name="choice3" id="agree" value="1" />Agree</label>
+            <label><input type="radio" name="choice3" id="neutral" value="2" />Neutral</label>
+            <label><input type="radio" name="choice3" id="disagree" value="3" />Disagree</label>
 
-            <p>I prefer to work alone</p>
-            <label><input type="radio" name="choice5" id="Strongly Agree5" value="1" />Strongly Agree</label>
-            <label><input type="radio" name="choice5" id="Agree5" value="2" />Agree</label>
-            <label><input type="radio" name="choice5" id="Disagree5" value="3" />Disagree</label>
-            <label><input type="radio" name="choice5" id="Strongly Disagree5" value="4" />Somewhat Agree</label>
+            <p>I am described as a stoic person.</p>
+            <label><input type="radio" name="choice4" id="agree" value="1" />Agree</label>
+            <label><input type="radio" name="choice4" id="neutral" value="2" />Neutral</label>
+            <label><input type="radio" name="choice4" id="disagree" value="3" />Disagree</label>
+
+            <p>I have a hard time understanding other's emotions.</p>
+
+            <label><input type="radio" name="choice5" id="agree" value="1" />Agree</label>
+            <label><input type="radio" name="choice5" id="neutral" value="2" />Neutral</label>
+            <label><input type="radio" name="choice5" id="disagree" value="3" />Disagree</label>
 
             <button type="submit" value="Submit">Submit</button>
 
         </form>
 
-        <p id="answer1"></p>
-        <p id="answer2"></p>
-        <p id="answer3"></p>
+        <h1 id="personality-type" class="top-of-page-heading"></h1>
 
+        <img id="movie-poster1" src="" alt="">
+        <h2 id="movie-option1" class="section-heading"></h2>
+
+        <img id="movie-poster2" src="" alt="">
+        <h2 id="movie-option2" class="section-heading"></h2>
+
+        <img id="movie-poster3" src="" alt="">
+        <h2 id="movie-option3" class="section-heading"></h2>
 
         </div>
-        <script>
-
-            document.getElementById("form1").onsubmit = function () {
-                choice1 = parseInt(document.querySelector('input[name = "choice1"]:checked').value);
-                choice2 = parseInt(document.querySelector('input[name = "choice2"]:checked').value);
-                choice3 = parseInt(document.querySelector('input[name = "choice3"]:checked').value);
-                choice3 = parseInt(document.querySelector('input[name = "choice4"]:checked').value);
-                choice3 = parseInt(document.querySelector('input[name = "choice5"]:checked').value);
-                total = choice1 + choice2 + choice3 + choice4 + choice5;
-
-                if (total < 5) {
-                    document.getElementById("answer1").innerHTML = "Mr. Nobody";
-                    document.getElementById("answer2").innerHTML = "Mr.Robot";
-                    document.getElementById("answer3").innerHTML = "Hidden Figures";
-                }
-
-                if (total >= 5 && total < 10) {
-                    document.getElementById("answer1").innerHTML = "Iron Lady";
-                    document.getElementById("answer2").innerHTML = "Aviator";
-                    document.getElementById("answer3").innerHTML = "Dark Knight";
-                }
-
-
-                // if (total >= 10 && total < 7) {
-                //     document.getElementById("answer2").innerHTML = "You got Spoon.";
-                // }
-
-                // if (total >= 7) {
-                //     document.getElementById("answer2").innerHTML = "You got Willie Nelson.";
-                // }
-                
-
-                return false; // required to not refresh the pchoice1; just leave this here
-            }// end the submit function
-        </script>
-
+        <script src="/mbti-test.js"></script>
     </main>
     <footer>
-        <a class="contact-foot-link nav-link footer-nav-links" href="/pchoice1s/contact-us.html">Contact</a>
-        <a class="site-map-foot-link nav-link footer-nav-links" href="/pchoice1s/sitemap.html">Site Map</a>
-        <a class="about-foot-link nav-link footer-nav-links" href="/pchoice1s/about.html">About</a>
+        <a class="contact-foot-link nav-link footer-nav-links" href="/pages/contact-us.html">Contact</a>
+        <a class="site-map-foot-link nav-link footer-nav-links" href="/pages/sitemap.html">Site Map</a>
+        <a class="about-foot-link nav-link footer-nav-links" href="/pages/about.html">About</a>
         <div id="social-links">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
             <a href="#"><i class="fab fa-twitter"></i></a>
@@ -150,7 +107,7 @@
             <a href="#"><i class="fab fa-youtube"></i></a>
         </div>
         <div id="license">
-            <img id="moodie-logo" src="/imchoice1s/Moodie-logo.png" alt="">
+            <img id="moodie-logo" src="/images/Moodie-logo.png" alt="">
             <p class="copyright">©2021 Moodie, Inc.</p>
         </div>
     </footer>

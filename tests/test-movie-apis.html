@@ -9,40 +9,39 @@
 </head>
 
 <body>
-    <div id="test-api" onload="fetchPosterData()"></div>
-    <img id="movie-poster" onload="moviePoster()" alt="">
+    <div id="test-api" src=""></div>
+    <h1 id="movie-name"></h1>
+    <img id="movie-poster" src="" alt="">
 
 
     <script>
-        // let br = document.createElement("br")
-        // fetch("https://api.themoviedb.org/3/keyword/12565?api_key=cb8d9e3ce40b1e83a927a5763c2c5ed4")
-        //     .then((response) => response.json())
-        //     .then((data) => console.log(data))
-        //     .catch('error')
+        let moviePoster = document.getElementById('movie-poster')
+        let movieName = document.getElementById('movie-name')
+
+        function returnPoster(id) {
+            fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=cb8d9e3ce40b1e83a927a5763c2c5ed4`)
+                .then((response) => response.json())
+                .then((data) => moviePoster.src = `https://image.tmdb.org/t/p/w500${data.poster_path}`)
+                .then((data) => console.log(data))
+                .catch('error')
+        }
+
+        returnPoster('680')
 
 
-        // fetch("https://api.themoviedb.org/3/movie/31011/images?api_key=cb8d9e3ce40b1e83a927a5763c2c5ed4")
-        //     .then((response) => response.json())
-        //     .then((data) => console.log(data))
-        //     .catch('error')
-
-
-
+        // function returnImg(d) {
+        //     document.getElementById("myImg").src = `https://image.tmdb.org/t/p/w500/${d.poster_path}`
+        // }
         // moviePoster = (d) => {
         //     document.getElementById('movie-poster').src = `https://image.tmdb.org/t/p/w500${d.posters[0]}`
         // 
 
 
-        fetch("https://api.themoviedb.org/3/movie/31011/images?api_key=cb8d9e3ce40b1e83a927a5763c2c5ed4")
-            .then(response => response.json())
-            .then(data => console.log(data))
-            .then(data => getMoviePoster(data))
-
-
-        function getMoviePoster(d) {
-            return d.posters[0]
-        }
-
+        // let br = document.createElement("br")
+        // fetch("https://api.themoviedb.org/3/keyword/12565?api_key=cb8d9e3ce40b1e83a927a5763c2c5ed4")
+        //     .then((response) => response.json())
+        //     .then((data) => console.log(data))
+        //     .catch('error')
 
     </script>
 </body>
