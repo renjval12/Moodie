@@ -12,173 +12,137 @@
     <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200;300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/d4306395b0.js" crossorigin="anonymous"></script>
+    <style>
+        .hide {
+            display: none;
+        }
+
+        .show {
+            display: block
+        }
+    </style>
+
+
 </head>
 
 <body>
     <header>
         <nav id="navigation-bar">
-            <img id="moodie-icon" src="/images/Drama-icon.png" alt="moodie-icon">
+            <img id="moodie-icon" src="/imchoice1s/Drama-icon.png" alt="moodie-icon">
             <h1 id="moodie-name">Moodie</h1>
             <section class="header-nav-links">
                 <a class="nav-link header-nav-links" href="/index.html">Home</a></li>
-                <a class="nav-link header-nav-links" href="/pages/about.html">About Us</a></li>
-                <a class="nav-link header-nav-links" href="/pages/personality-test-page.html">Choose a Test</a></li>
-                <a class="nav-link header-nav-links" href="/pages/contact-us.html">Contact</a></li>
+                <a class="nav-link header-nav-links" href="/pchoice1s/about.html">About Us</a></li>
+                <a class="nav-link header-nav-links" href="/pchoice1s/personality-test-pchoice1.html">Choose a Test</a>
+                </li>
+                <a class="nav-link header-nav-links" href="/pchoice1s/contact-us.html">Contact</a></li>
             </section>
 
-            <form class="search-bar" action="/action_page.php">
+            <form class="search-bar" action="/action_pchoice1.php">
                 <input id="search-input" type="text" name="search" placeholder="Search...">
                 <button id="search-btn" type="submit"><i class="fas fa-search" aria-hidden="true"></i></button>
             </form>
-            <!-- <section class="search-icon">
-        <form action="/action_page.php">
-            <button type="submit"><i class="fas fa-search" aria-hidden="true"></i></button>
-        </form>
-    </section>-->
-            <a class="nav-link header-nav-links login" href="/pages/login.html">Login</a>
+            <a class="nav-link header-nav-links login" href="/pchoice1s/login.html">Login</a>
         </nav>
     </header>
     <main>
         <section id="mbti-intro">
             <h1 class="main-heading mbti-test-heading">Myers Briggs Type Indicator Test</h1>
             <h2 class="section-heading">The Test</h2>
-            <p class="section-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem inventore eveniet iusto. Distinctio vitae
+            <p class="section-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem inventore
+                eveniet iusto. Distinctio vitae
                 minus debitis cum quisquam modi atque voluptates suscipit porro eius similique magnam, unde id, est
                 veniam.
             </p>
             <h2 class="section-heading">How to Take the Test</h2>
-            <p class="section-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias amet saepe iure sapiente, maxime,
+            <p class="section-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias amet saepe
+                iure sapiente, maxime,
                 doloribus,
                 recusandae perspiciatis mollitia porro qui a.</p>
-            <button>Start</button>
+            <button onclick="document.querySelector('#form1').classList.toggle('show')">Start</button>
         </section>
-        <section id="mbti-q1" class="question-1">
-            <h2 class="section-heading">Question # 1</h2>
-            <p class="test-question"></p>
-            <form action="">
-                <span>Strongly Agree</span>
-                <span>Agree</span>
-                <span>Neutral</span>
-                <span>Disagree</span>
-                <span>Strongly Disagree</span>
-                <input class="range slider" type="range" id="volume" min="0" max="5" value="10" step="1">
-                <button class="blue-blk-btn">Next</button>
-            </form>
-        </section>
-        <section id="mbti-q2" class="question-2">
-            <h2 class="section-heading">Question # 2</h2>
-            <p class="test-question"></p>
-            <span>Strongly Agree</span>
-            <span>Agree</span>
-            <span>Neutral</span>
-            <span>Disagree</span>
-            <span>Strongly Disagree</span>
-            <input class="range slider" type="range" id="volume" min="0" max="5" value="10" step="1">
-            <button>Previous</button>
-            <button class="blue-blk-btn">Next</button>
-        </section>
-        <section id="mbti-q3" class="question-3">
-            <h2 class="section-heading">Question # 3</h2>
-            <p class="test-question"></p>
-            <h1></h1>
-            <span>Strongly Agree</span>
-            <span>Agree</span>
-            <span>Neutral</span>
-            <span>Disagree</span>
-            <span>Strongly Disagree</span>
-            <input class="range slider" type="range" id="volume" min="0" max="5" value="10" step="1">
-            <button>Previous</button>
-            <button class="blue-blk-btn">Next</button>
-        </section>
-        <section id="mbti-q4" class="question-4">
-            <h2 class="section-heading">Question # 4</h2>
-            <p class="test-question"></p>
-            <span>Strongly Agree</span>
-            <span>Agree</span>
-            <span>Neutral</span>
-            <span>Disagree</span>
-            <span>Strongly Disagree</span>
-            <input class="range slider" type="range" id="volume" min="0" max="5" value="10" step="1">
-            <button>Previous</button>
-            <button class="blue-blk-btn">Next</button>
-        </section>
-        <section id="mbti-q5" class="question-5">
-            <h2 class="section-heading">Question # 5</h2>
-            <p class="test-question"></p>
-            <span>Strongly Agree</span>
-            <span>Agree</span>
-            <span>Neutral</span>
-            <span>Disagree</span>
-            <span>Strongly Disagree</span>
-            <input class="range slider" type="range" id="volume" min="0" max="5" value="10" step="1">
-            <button>Previous</button>
-            <button class="blue-blk-btn">Next</button>
-        </section>
-        <section id="mbti-q6" class="question-6">
-            <h2 class="section-heading">Question # 6</h2>
-            <p class="test-question"></p>
-            <span>Strongly Agree</span>
-            <span>Agree</span>
-            <span>Neutral</span>
-            <span>Disagree</span>
-            <span>Strongly Disagree</span>
-            <input class="range slider" type="range" id="volume" min="0" max="5" value="10" step="1">
-            <button>Previous</button>
-            <button class="blue-blk-btn">Next</button>
-        </section>
-        <section id="mbti-q7" class="question-7">
-            <h2 class="section-heading">Question # 7</h2>
-            <p class="test-question"></p>
-            <span>Strongly Agree</span>
-            <span>Agree</span>
-            <span>Neutral</span>
-            <span>Disagree</span>
-            <span>Strongly Disagree</span>
-            <input class="range slider" type="range" id="volume" min="0" max="5" value="10" step="1">
-            <button>Previous</button>
-            <button class="blue-blk-btn">Next</button>
-        </section>
-        <section id="mbti-q8" class="question-8">
-            <h2 class="section-heading">Question # 8</h2>
-            <p class="test-question"></p>
-            <span>Strongly Agree</span>
-            <span>Agree</span>
-            <span>Neutral</span>
-            <span>Disagree</span>
-            <span>Strongly Disagree</span>
-            <input class="range slider" type="range" id="volume" min="0" max="5" value="10" step="1">
-            <button>Previous</button>
-            <button class="blue-blk-btn">Next</button>
-        </section>
-        <section id="mbti-q9" class="question-9">
-            <h2 class="section-heading">Question # 9</h2>
-            <p class="test-question"></p>
-            <span>Strongly Agree</span>
-            <span>Agree</span>
-            <span>Neutral</span>
-            <span>Disagree</span>
-            <span>Strongly Disagree</span>
-            <input class="range slider" type="range" id="volume" min="0" max="5" value="10" step="1">
-            <button>Previous</button>
-            <button class="blue-blk-btn">Next</button>
-        </section>
-        <section id="mbti-q10" class="question-10">
-            <h2 class="section-heading">Question # 10</h2>
-            <p class="test-question"></p>
-            <span>Strongly Agree</span>
-            <span>Agree</span>
-            <span>Neutral</span>
-            <span>Disagree</span>
-            <span>Strongly Disagree</span>
-            <input class="range slider" type="range" id="volume" min="0" max="5" value="10" step="1">
-            <button>Previous</button>
-            <button class="blue-blk-btn">Submit</button>
-        </section>
+        <form id="form1">
+            <p>My friends, family, and co-workers describe me as a perfectionist.</p>
+            <label><input type="radio" name="choice1" id="Strongly Agree1" value="1" />Strongly Agree</label>
+            <label><input type="radio" name="choice1" id="Agree1" value="2" />Agree</label>
+            <label><input type="radio" name="choice1" id="Disagree1" value="3" />Disagree</label>
+            <label><input type="radio" name="choice1" id="Strongly Disagree1" value="4" />Somewhat Agree</label>
+
+            <p>My emotions tend to cloud my judgement</p>
+            <label><input type="radio" name="choice2" id="Strongly Agree2" value="1" />Strongly Agree</label>
+            <label><input type="radio" name="choice2" id="Agree2" value="2" />Agree</label>
+            <label><input type="radio" name="choice2" id="Disagree2" value="3" />Disagree</label>
+            <label><input type="radio" name="choice2" id="Strongly Disagree2" value="4" />Somewhat Agree</label>
+
+            <p>Many would describe me as a wallflower</p>
+            <label><input type="radio" name="choice3" id="Strongly Agree3" value="1" />Strongly Agree</label>
+            <label><input type="radio" name="choice3" id="Agree3" value="2" />Agree</label>
+            <label><input type="radio" name="choice3" id="Disagree3" value="3" />Disagree</label>
+            <label><input type="radio" name="choice3" id="Strongly Disagree3" value="4" />Somewhat Agree</label>
+
+            <p>I am uncomfortable with being in a crowd</p>
+            <label><input type="radio" name="choice4" id="Strongly Agree4" value="1" />Strongly Agree</label>
+            <label><input type="radio" name="choice4" id="Agree4" value="2" />Agree</label>
+            <label><input type="radio" name="choice4" id="Disagree4" value="3" />Disagree</label>
+            <label><input type="radio" name="choice4" id="Strongly Disagree4" value="4" />Somewhat Agree</label>
+
+            <p>I prefer to work alone</p>
+            <label><input type="radio" name="choice5" id="Strongly Agree5" value="1" />Strongly Agree</label>
+            <label><input type="radio" name="choice5" id="Agree5" value="2" />Agree</label>
+            <label><input type="radio" name="choice5" id="Disagree5" value="3" />Disagree</label>
+            <label><input type="radio" name="choice5" id="Strongly Disagree5" value="4" />Somewhat Agree</label>
+
+            <button type="submit" value="Submit">Submit</button>
+
+        </form>
+
+        <p id="answer1"></p>
+        <p id="answer2"></p>
+        <p id="answer3"></p>
+
+
+        </div>
+        <script>
+
+            document.getElementById("form1").onsubmit = function () {
+                choice1 = parseInt(document.querySelector('input[name = "choice1"]:checked').value);
+                choice2 = parseInt(document.querySelector('input[name = "choice2"]:checked').value);
+                choice3 = parseInt(document.querySelector('input[name = "choice3"]:checked').value);
+                choice3 = parseInt(document.querySelector('input[name = "choice4"]:checked').value);
+                choice3 = parseInt(document.querySelector('input[name = "choice5"]:checked').value);
+                total = choice1 + choice2 + choice3 + choice4 + choice5;
+
+                if (total < 5) {
+                    document.getElementById("answer1").innerHTML = "Mr. Nobody";
+                    document.getElementById("answer2").innerHTML = "Mr.Robot";
+                    document.getElementById("answer3").innerHTML = "Hidden Figures";
+                }
+
+                if (total >= 5 && total < 10) {
+                    document.getElementById("answer1").innerHTML = "Iron Lady";
+                    document.getElementById("answer2").innerHTML = "Aviator";
+                    document.getElementById("answer3").innerHTML = "Dark Knight";
+                }
+
+
+                // if (total >= 10 && total < 7) {
+                //     document.getElementById("answer2").innerHTML = "You got Spoon.";
+                // }
+
+                // if (total >= 7) {
+                //     document.getElementById("answer2").innerHTML = "You got Willie Nelson.";
+                // }
+                
+
+                return false; // required to not refresh the pchoice1; just leave this here
+            }// end the submit function
+        </script>
+
     </main>
     <footer>
-        <a class="contact-foot-link nav-link footer-nav-links" href="/pages/contact-us.html">Contact</a>
-        <a class="site-map-foot-link nav-link footer-nav-links" href="/pages/sitemap.html">Site Map</a>
-        <a class="about-foot-link nav-link footer-nav-links" href="/pages/about.html">About</a>
+        <a class="contact-foot-link nav-link footer-nav-links" href="/pchoice1s/contact-us.html">Contact</a>
+        <a class="site-map-foot-link nav-link footer-nav-links" href="/pchoice1s/sitemap.html">Site Map</a>
+        <a class="about-foot-link nav-link footer-nav-links" href="/pchoice1s/about.html">About</a>
         <div id="social-links">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
             <a href="#"><i class="fab fa-twitter"></i></a>
@@ -186,8 +150,9 @@
             <a href="#"><i class="fab fa-youtube"></i></a>
         </div>
         <div id="license">
-            <img id="moodie-logo" src="/images/Moodie-logo.png" alt="">
-            <p class="copyright">©2021 Moodie, Inc.</p></div>
+            <img id="moodie-logo" src="/imchoice1s/Moodie-logo.png" alt="">
+            <p class="copyright">©2021 Moodie, Inc.</p>
+        </div>
     </footer>
 </body>
 

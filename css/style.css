@@ -374,6 +374,7 @@ main {
 /* end of about page */
 
 /* beginning of contact page */
+
 #contact-page {
     display: grid;
     grid-template: 20% 1fr 20%/repeat(3, 1fr);
@@ -400,15 +401,47 @@ main {
 
 /* Beginning of Choose a Test Page */
 
+#choose-test-page {
+    display: grid;
+    grid-template: repeat(3, 1fr)/repeat(4, 1fr);
+    padding: 5%;
+    gap: 2%;
+    align-items: center;
+    justify-items: center;
+}
 
+.choose-a-test-heading.top-of-page-heading {
+    grid-area: 1/2/2/4;
+    text-align: center;
+}
 
+.mbti-test-select {
+    grid-area: 2/1/3/2;
+}
 
+.enneagram-test-select {
+    grid-area: 2/2/3/3;
+}
 
+.big-five-test-select {
+    grid-area: 2/3/3/4;
+}
 
+.love-languages-test-select {
+    grid-area: 2/4/3/5;
+}
 
+.choose-a-test-img{
+    max-width: 200px;
+}
 
 /* End of Choose a Test Page */
 
+/* MBTI Test Page */
+
+.hide {
+    display: none;
+}
 
 /* one offs */
 
