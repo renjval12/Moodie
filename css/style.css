@@ -139,13 +139,16 @@ a.header-nav-links, a.footer-nav-links {
 
 /* Beginning of Top of Home Page Section */
 
+main {
+    background: no-repeat url(/images/Background\ Design\ 1@2x.png);
+    background-size: 80%;
+}
+
 #top-home-page {
     display: grid;
     grid-template: 1fr 1fr 1fr 1fr/repeat(3, 1fr);
     justify-items: center;
     align-items: center;
-    background: no-repeat url(/images/Background\ Design\ 1@2x.png);
-    background-size: 80%;
 }
 
 /*Introduction Content*/
@@ -301,7 +304,7 @@ a.header-nav-links, a.footer-nav-links {
     text-align: justify;
 }
 
-#about-moodie-img {
+#about-moodie-img, #about-the-founder-img {
     max-width: 500px;
     grid-area: 2/2/4/3;
 }
@@ -314,6 +317,8 @@ a.header-nav-links, a.footer-nav-links {
     gap: 5%;
     justify-items: center;
     padding: 10% 5%;
+    background: url(/images/Background\ Design\ 2@2x.png ) no-repeat;
+    color: #0BB7FF
 }
 
 #mbti-test-description, #enneagram-test-description, #big-five-test-description, #love-languages-test-description {
@@ -345,6 +350,55 @@ a.header-nav-links, a.footer-nav-links {
 
 /* About the Founder */
 
+#about-the-founder {
+    display: grid;
+    grid-template: min-content 1fr min-content/10% repeat(2, 1fr) 10%;
+    align-items: center;
+    justify-items: center;
+    background: url(/images/Background\ Design\ Blue\ 2@2x.png) no-repeat;
+    background-size: cover;
+    background-color: white;
+    padding: 20% 0
+}
+
+#about-founder-description {
+    grid-area: 2/2/3/3;
+    padding: 0 20%;
+    text-align: center;
+}
+
+#about-the-founder-img {
+    grid-area: 2/3/3/4;
+}
+
+/* end of about page */
+
+/* beginning of contact page */
+#contact-page {
+    display: grid;
+    grid-template: 20% 1fr 20%/repeat(3, 1fr);
+    padding: 15% 0;
+}
+
+#contact-form {
+    display: grid;
+    grid-template: 1fr/1fr;
+    grid-area: 2/2/3/3;
+    background-color: #0BB7FF;
+    color: black;
+    padding: 10%;
+    border-radius: 50px;
+}
+
+#submit-contact-btn {
+    display: block;
+    margin: 5% 0;
+    justify-self: center;
+}
+
+/* end of contact page */
+
+/* Beginning of Choose a Test Page */
 
 
 
@@ -353,7 +407,7 @@ a.header-nav-links, a.footer-nav-links {
 
 
 
-
+/* End of Choose a Test Page */
 
 
 /* one offs */
@@ -376,8 +430,6 @@ button, input[type="submit"] {
 .section-heading {
     font-size: 1.5rem;
 }
-
-.subheading {}
 
 textarea {
     font-size: 100%;
