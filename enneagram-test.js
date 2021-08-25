@@ -25,54 +25,54 @@ document.getElementById("form1").onsubmit = function () {
 
     if (total < 6) {
 
-        fetch("https://api.themoviedb.org/3/movie/31011?api_key=cb8d9e3ce40b1e83a927a5763c2c5ed4")
+        fetch("https://api.themoviedb.org/3/movie/273895?api_key=cb8d9e3ce40b1e83a927a5763c2c5ed4")
             .then((response) => response.json())
             .then((data) => moviePoster1.src = `https://image.tmdb.org/t/p/w500${data.poster_path}`)
             .catch('error')
-        fetch("https://api.themoviedb.org/3/movie/266856?api_key=cb8d9e3ce40b1e83a927a5763c2c5ed4")
+        fetch("https://api.themoviedb.org/3/movie/70160?api_key=cb8d9e3ce40b1e83a927a5763c2c5ed4")
             .then((response) => response.json())
             .then((data) => moviePoster2.src = `https://image.tmdb.org/t/p/w500${data.poster_path}`)
             .catch('error')
-        fetch("https://api.themoviedb.org/3/movie/4553?api_key=cb8d9e3ce40b1e83a927a5763c2c5ed4")
+        fetch("https://api.themoviedb.org/3/movie/522212?api_key=cb8d9e3ce40b1e83a927a5763c2c5ed4")
             .then((response) => response.json())
             .then((data) => moviePoster3.src = `https://image.tmdb.org/t/p/w500${data.poster_path}`)
             .catch('error')
         document.getElementById("personality-type").innerHTML = "The Peacemaker"
         document.getElementById("movie-option1").innerHTML = "Selma"
         document.getElementById("movie-option2").innerHTML = "Hunger Games";
-        document.getElementById("movie-option3").innerHTML = "Sisterhood of the Traveling Pants";
+        document.getElementById("movie-option3").innerHTML = "Just Mercy";
     }
 
     if (total >= 6 && total < 9) {
-        fetch("https://api.themoviedb.org/3/movie/4421?api_key=cb8d9e3ce40b1e83a927a5763c2c5ed4")
+        fetch("https://api.themoviedb.org/3/movie/150540?api_key=cb8d9e3ce40b1e83a927a5763c2c5ed4")
             .then((response) => response.json())
             .then((data) => moviePoster1.src = `https://image.tmdb.org/t/p/w500${data.poster_path}`)
             .catch('error')
-        fetch("https://api.themoviedb.org/3/movie/680?api_key=cb8d9e3ce40b1e83a927a5763c2c5ed4")
+        fetch("https://api.themoviedb.org/3/movie/4922?api_key=cb8d9e3ce40b1e83a927a5763c2c5ed4")
             .then((response) => response.json())
             .then((data) => moviePoster2.src = `https://image.tmdb.org/t/p/w500${data.poster_path}`)
             .catch('error')
-        fetch("https://api.themoviedb.org/3/movie/4518?api_key=cb8d9e3ce40b1e83a927a5763c2c5ed4")
+        fetch("https://api.themoviedb.org/3/movie/https://www.themoviedb.org/movie/587-big-fish?api_key=cb8d9e3ce40b1e83a927a5763c2c5ed4")
             .then((response) => response.json())
             .then((data) => moviePoster3.src = `https://image.tmdb.org/t/p/w500${data.poster_path}`)
             .catch('error')
         document.getElementById("personality-type").innerHTML = "The Enthusiast"
-        document.getElementById("movie-option1").innerHTML = "Romeo & Juliet";
-        document.getElementById("movie-option2").innerHTML = "The Confessions of a Shopaholic";
+        document.getElementById("movie-option1").innerHTML = "Inside Out";
+        document.getElementById("movie-option2").innerHTML = "The Curious Case of Benjamin Button";
         document.getElementById("movie-option3").innerHTML = "Big Fish";
 
     }
 
     if (total >= 9 && total < 14) {
-        fetch("https://api.themoviedb.org/3/movie/350?api_key=cb8d9e3ce40b1e83a927a5763c2c5ed4")
+        fetch("https://api.themoviedb.org/3/movie/73939?api_key=cb8d9e3ce40b1e83a927a5763c2c5ed4")
             .then((response) => response.json())
             .then((data) => moviePoster1.src = `https://image.tmdb.org/t/p/w500${data.poster_path}`)
             .catch('error')
-        fetch("https://api.themoviedb.org/3/movie/9400?api_key=cb8d9e3ce40b1e83a927a5763c2c5ed4")
+        fetch("https://api.themoviedb.org/3/movie/84892?api_key=cb8d9e3ce40b1e83a927a5763c2c5ed4")
             .then((response) => response.json())
             .then((data) => moviePoster2.src = `https://image.tmdb.org/t/p/w500${data.poster_path}`)
             .catch('error')
-        fetch("https://api.themoviedb.org/3/movie/106646?api_key=cb8d9e3ce40b1e83a927a5763c2c5ed4")
+        fetch("https://api.themoviedb.org/3/movie/302401?api_key=cb8d9e3ce40b1e83a927a5763c2c5ed4")
             .then((response) => response.json())
             .then((data) => moviePoster3.src = `https://image.tmdb.org/t/p/w500${data.poster_path}`)
             .catch('error')
@@ -82,21 +82,21 @@ document.getElementById("form1").onsubmit = function () {
         document.getElementById("movie-option3").innerHTML = "Snowden";
     }
     if (total >= 13) {
-        fetch("https://api.themoviedb.org/3/movie/194?api_key=cb8d9e3ce40b1e83a927a5763c2c5ed4")
+        fetch("https://api.themoviedb.org/3/movie/242582?api_key=cb8d9e3ce40b1e83a927a5763c2c5ed4")
             .then((response) => response.json())
             .then((data) => moviePoster1.src = `https://image.tmdb.org/t/p/w500${data.poster_path}`)
             .catch('error')
-        fetch("https://api.themoviedb.org/3/movie/1360?api_key=cb8d9e3ce40b1e83a927a5763c2c5ed4")
+        fetch("https://api.themoviedb.org/3/movie/14359?api_key=cb8d9e3ce40b1e83a927a5763c2c5ed4")
             .then((response) => response.json())
             .then((data) => moviePoster2.src = `https://image.tmdb.org/t/p/w500${data.poster_path}`)
             .catch('error')
-        fetch("https://api.themoviedb.org/3/movie/339877?api_key=cb8d9e3ce40b1e83a927a5763c2c5ed4")
+        fetch("https://api.themoviedb.org/3/movie/146233?api_key=cb8d9e3ce40b1e83a927a5763c2c5ed4")
             .then((response) => response.json())
             .then((data) => moviePoster3.src = `https://image.tmdb.org/t/p/w500${data.poster_path}`)
             .catch('error')
         document.getElementById("personality-type").innerHTML = "The Investigator"
         document.getElementById("movie-option1").innerHTML = "Nightcrawler";
-        document.getElementById("movie-option2").innerHTML = "The Big Short";
+        document.getElementById("movie-option2").innerHTML = "Doubt";
         document.getElementById("movie-option3").innerHTML = "Prisoners";
     }
     return false; // required to not refresh the pchoice1; just leave this here

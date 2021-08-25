@@ -17,12 +17,13 @@
 <body>
     <header>
         <nav id="navigation-bar">
-            <img id="moodie-icon" src="/images/Drama-icon.png" alt="moodie-icon">
+            <img id="moodie-icon" src="/imchoice1s/Drama-icon.png" alt="moodie-icon">
             <h1 id="moodie-name">Moodie</h1>
             <section class="header-nav-links">
                 <a class="nav-link header-nav-links" href="/index.html">Home</a></li>
                 <a class="nav-link header-nav-links" href="/pages/about.html">About Us</a></li>
-                <a class="nav-link header-nav-links" href="/pages/personality-test-page.html">Choose a Test</a></li>
+                <a class="nav-link header-nav-links" href="/pages/personality-test-page.html">Choose a Test</a>
+                </li>
                 <a class="nav-link header-nav-links" href="/pages/contact-us.html">Contact</a></li>
             </section>
 
@@ -30,150 +31,75 @@
                 <input id="search-input" type="text" name="search" placeholder="Search...">
                 <button id="search-btn" type="submit"><i class="fas fa-search" aria-hidden="true"></i></button>
             </form>
-            <!-- <section class="search-icon">
-        <form action="/action_page.php">
-            <button type="submit"><i class="fas fa-search" aria-hidden="true"></i></button>
-        </form>
-    </section>-->
             <a class="nav-link header-nav-links login" href="/pages/login.html">Login</a>
         </nav>
     </header>
     <main>
-        <section id="big-five-intro">
-            <h1 class="main-heading big-five-test-heading">Big Five Test</h1>
+        <section id="mbti-intro">
+            <h1 class="top-of-page-heading mbti-test-heading">Big Five Personality Test</h1>
             <h2 class="section-heading">The Test</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem inventore eveniet iusto. Distinctio vitae
+            <p class="section-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem inventore
+                eveniet iusto. Distinctio vitae
                 minus debitis cum quisquam modi atque voluptates suscipit porro eius similique magnam, unde id, est
                 veniam.
             </p>
             <h2 class="section-heading">How to Take the Test</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias amet saepe iure sapiente, maxime,
+            <p class="section-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias amet saepe
+                iure sapiente, maxime,
                 doloribus,
                 recusandae perspiciatis mollitia porro qui a.</p>
-            <button>Start</button>
+            <button onclick="document.querySelector('#form1').classList.remove('hide')">Start</button>
         </section>
-        <section id="big-five-q1" class="question-1">
-            <h2 class="section-heading">Question # 1</h2>
-            <p class="test-question"></p>
-            <form action="">
-                <span>Strongly Agree</span>
-                <span>Agree</span>
-                <span>Neutral</span>
-                <span>Disagree</span>
-                <span>Strongly Disagree</span>
-                <input class="range slider" type="range" id="volume" min="0" max="5" value="10" step="1">
-                <button class="blue-blk-btn">Next</button>
-            </form>
-        </section>
-        <section id="big-five-q2" class="question-2">
-            <h2 class="section-heading">Question # 2</h2>
-            <p class="test-question"></p>
-            <span>Strongly Agree</span>
-            <span>Agree</span>
-            <span>Neutral</span>
-            <span>Disagree</span>
-            <span>Strongly Disagree</span>
-            <input class="range slider" type="range" id="volume" min="0" max="5" value="10" step="1">
-            <button>Previous</button>
-            <button class="blue-blk-btn">Next</button>
-        </section>
-        <section id="big-five-q3" class="question-3">
-            <h2 class="section-heading">Question # 3</h2>
-            <p class="test-question"></p>
-            <h1></h1>
-            <span>Strongly Agree</span>
-            <span>Agree</span>
-            <span>Neutral</span>
-            <span>Disagree</span>
-            <span>Strongly Disagree</span>
-            <input class="range slider" type="range" id="volume" min="0" max="5" value="10" step="1">
-            <button>Previous</button>
-            <button class="blue-blk-btn">Next</button>
-        </section>
-        <section id="big-five-q4" class="question-4">
-            <h2 class="section-heading">Question # 4</h2>
-            <p class="test-question"></p>
-            <span>Strongly Agree</span>
-            <span>Agree</span>
-            <span>Neutral</span>
-            <span>Disagree</span>
-            <span>Strongly Disagree</span>
-            <input class="range slider" type="range" id="volume" min="0" max="5" value="10" step="1">
-            <button>Previous</button>
-            <button class="blue-blk-btn">Next</button>
-        </section>
-        <section id="big-five-q5" class="question-5">
-            <h2 class="section-heading">Question # 5</h2>
-            <p class="test-question"></p>
-            <span>Strongly Agree</span>
-            <span>Agree</span>
-            <span>Neutral</span>
-            <span>Disagree</span>
-            <span>Strongly Disagree</span>
-            <input class="range slider" type="range" id="volume" min="0" max="5" value="10" step="1">
-            <button>Previous</button>
-            <button class="blue-blk-btn">Next</button>
-        </section>
-        <section id="big-five-q6" class="question-6">
-            <h2 class="section-heading">Question # 6</h2>
-            <p class="test-question"></p>
-            <span>Strongly Agree</span>
-            <span>Agree</span>
-            <span>Neutral</span>
-            <span>Disagree</span>
-            <span>Strongly Disagree</span>
-            <input class="range slider" type="range" id="volume" min="0" max="5" value="10" step="1">
-            <button>Previous</button>
-            <button class="blue-blk-btn">Next</button>
-        </section>
-        <section id="big-five-q7" class="question-7">
-            <h2 class="section-heading">Question # 7</h2>
-            <p class="test-question"></p>
-            <span>Strongly Agree</span>
-            <span>Agree</span>
-            <span>Neutral</span>
-            <span>Disagree</span>
-            <span>Strongly Disagree</span>
-            <input class="range slider" type="range" id="volume" min="0" max="5" value="10" step="1">
-            <button>Previous</button>
-            <button class="blue-blk-btn">Next</button>
-        </section>
-        <section id="big-five-q8" class="question-8">
-            <h2 class="section-heading">Question # 8</h2>
-            <p class="test-question"></p>
-            <span>Strongly Agree</span>
-            <span>Agree</span>
-            <span>Neutral</span>
-            <span>Disagree</span>
-            <span>Strongly Disagree</span>
-            <input class="range slider" type="range" id="volume" min="0" max="5" value="10" step="1">
-            <button>Previous</button>
-            <button class="blue-blk-btn">Next</button>
-        </section>
-        <section id="big-five-q9" class="question-9">
-            <h2 class="section-heading">Question # 9</h2>
-            <p class="test-question"></p>
-            <span>Strongly Agree</span>
-            <span>Agree</span>
-            <span>Neutral</span>
-            <span>Disagree</span>
-            <span>Strongly Disagree</span>
-            <input class="range slider" type="range" id="volume" min="0" max="5" value="10" step="1">
-            <button>Previous</button>
-            <button class="blue-blk-btn">Next</button>
-        </section>
-        <section id="big-five-q10" class="question-10">
-            <h2 class="section-heading">Question # 10</h2>
-            <p class="test-question"></p>
-            <span>Strongly Agree</span>
-            <span>Agree</span>
-            <span>Neutral</span>
-            <span>Disagree</span>
-            <span>Strongly Disagree</span>
-            <input class="range slider" type="range" id="volume" min="0" max="5" value="10" step="1">
-            <button>Previous</button>
-            <button class="blue-blk-btn">Submit</button>
-        </section>
+
+        <form id="form1" class="hide">
+            <div id="big-five-q1">
+                <p>I usually try to do right by others.</p>
+                <label><input type="radio" name="choice1" id="agree" value="1" />Agree</label>
+                <label><input type="radio" name="choice1" id="neutral" value="2" />Neutral</label>
+                <label><input type="radio" name="choice1" id="disagree" value="3" />Disagree</label>
+            </div>
+            <div id="big-five-q2">
+                <p>Sometimes I do things that might hurt others, but helps me. </p>
+                <label><input type="radio" name="choice2" id="agree" value="1" />Agree</label>
+                <label><input type="radio" name="choice2" id="neutral" value="2" />Neutral</label>
+                <label><input type="radio" name="choice2" id="disagree" value="3" />Disagree</label>
+            </div>
+            <div id="big-five-q3">
+                <p>I keep to myself and have a relatively close groups of friends.</p>
+                <label><input type="radio" name="choice3" id="agree" value="1" />Agree</label>
+                <label><input type="radio" name="choice3" id="neutral" value="2" />Neutral</label>
+                <label><input type="radio" name="choice3" id="disagree" value="3" />Disagree</label>
+            </div>
+            <div id="big-five-q4">
+                <p>I love to find new hobbies and interesting things to do.</p>
+                <label><input type="radio" name="choice4" id="agree" value="1" />Agree</label>
+                <label><input type="radio" name="choice4" id="neutral" value="2" />Neutral</label>
+                <label><input type="radio" name="choice4" id="disagree" value="3" />Disagree</label>
+            </div>
+            <div id="big-five-q5">
+                <p>I love a good adventure.</p>
+                <label><input type="radio" name="choice5" id="agree" value="1" />Agree</label>
+                <label><input type="radio" name="choice5" id="neutral" value="2" />Neutral</label>
+                <label><input type="radio" name="choice5" id="disagree" value="3" />Disagree</label>
+            </div>
+
+            <button type="submit" value="Submit">Submit</button>
+
+        </form>
+
+        <h1 id="personality-type" class="top-of-page-heading"></h1>
+
+        <img id="movie-poster1" src="" alt="">
+        <h2 id="movie-option1" class="section-heading"></h2>
+
+        <img id="movie-poster2" src="" alt="">
+        <h2 id="movie-option2" class="section-heading"></h2>
+
+        <img id="movie-poster3" src="" alt="">
+        <h2 id="movie-option3" class="section-heading"></h2>
+
+        </div>
+        <script src="/big-five-test.js"></script>
     </main>
     <footer>
         <a class="contact-foot-link nav-link footer-nav-links" href="/pages/contact-us.html">Contact</a>
@@ -187,7 +113,8 @@
         </div>
         <div id="license">
             <img id="moodie-logo" src="/images/Moodie-logo.png" alt="">
-            <p class="copyright">©2021 Moodie, Inc.</p></div>
+            <p class="copyright">©2021 Moodie, Inc.</p>
+        </div>
     </footer>
 </body>
 
