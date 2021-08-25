@@ -1,0 +1,162 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<style>
+.mystyle1,.mystyle2 {width: 400px;
+  height: 100px;
+  background-color: lightblue;
+  text-align: center;
+  font-size: 25px;
+  color: navy;
+  margin-bottom: 10px;
+  
+}
+
+.newClassName1, .newClassName2 {
+  display: none
+}
+
+</style>
+</head>
+<body>
+
+<p>Click the button to toggle between two classes.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+
+<p><strong>Note:</strong> The classList property is not supported in Internet Explorer 9 and earlier versions.</p>
+
+<div id="myDIV1" class="mystyle1">
+I am a DIV element
+</div>
+<button onclick="myFunction()">Try it</button>
+
+<button onclick="mySecondFunction()">Try it</button>
+<button onclick="mySecondFunction()">Try it</button>
+<button onclick="mySecondFunction()">Try it</button>
+<button onclick="mySecondFunction()">Try it</button>
+<button onclick="mySecondFunction()">Try it</button>
+
+
+<div id="myDIV2" class="mystyle2">
+I am a DIV element
+</div>
+<script>
+function myFunction() {
+  document.getElementById("myDIV1").classList.toggle("newClassName1");
+}
+
+function mySecondFunction(){
+  document.getElementById("myDIV2").classList.toggle("newClassName2");
+}
+</script>
+
+</body>
+</html> -->
+
+
+
+
+
+<style>
+    .fade1 {
+        width: 200px;
+        height: 200px;
+        background: red;
+        /* position: absolute; */
+        animation: fadeIn 3s linear forwards;
+
+    }
+
+    .fade2 {
+        width: 200px;
+        height: 200px;
+        background: red;
+        display: none;
+    }
+
+    .ElementToFadeIn {
+        display: block;
+        animation: fadeIn 3s linear forwards;
+    }
+
+    .ElementToFadeOut {
+        animation: fadeOut 3s linear forwards;
+    }
+
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeOut {
+
+        0% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+</style>
+</head>
+
+<body>
+    <div class="fade1"></div>
+    <div class="fade2"></div>
+    <button class="fadeButton2">previous</button>
+    <button class="fadeButton3">next</button>
+
+    <div class="fade3"></div>
+    <div class="fade4"></div>
+    <div class="fade5"></div>
+    <div class="fade6"></div>
+    <div class="fade7"></div>
+    <div class="fade8"></div>
+    <div class="fade9"></div>
+    <div class="fade10"></div>
+    <div class="fade11"></div>
+    <div class="fade12"></div>
+
+
+    <script>
+
+        // document.querySelector(".fadeButton1").addEventListener("click", fadeOut)
+        document.querySelector(".fadeButton2").addEventListener("click", fadeInPrevious)
+        document.querySelector(".fadeButton3").addEventListener("click", fadeIn)
+        document.querySelector(".fadeButton3").addEventListener("click", fadeOut)
+        document.querySelector(".fadeButton4").addEventListener("click", fadeOut)
+        document.querySelector(".fadeButton5").addEventListener("click", fadeOut)
+        document.querySelector(".fadeButton6").addEventListener("click", fadeOut)
+        document.querySelector(".fadeButton7").addEventListener("click", fadeOut)
+        document.querySelector(".fadeButton8").addEventListener("click", fadeOut)
+
+        // function fadeOut() {
+        //     return document.querySelector(".fade1").style.display = 'none'
+
+        //     // document.querySelector(".fade1").classList.display('ElementToFadeOut')
+        //     // setTimeout(function () {
+        //     //     return document.querySelector(".fade1").style.display = 'none'
+
+        //     // }, 3000);
+        // };
+        function fadeIn(fadeOutElement, fadeInElement) {
+            document.querySelector(fadeOutElement).style.display = 'none'
+            document.querySelector(fadeInElement).classList.toggle('ElementToFadeIn')
+        }
+        function fadeInPrevious(fadeOutCurrElement, fadeInPrevElement) {
+            document.querySelector(fadeOutCurrElement).classList.toggle('ElementToFadeOut')
+            document.querySelector(fadeInPrevElement).classList.toggle('ElementToFadeIn')
+        }
+    </script>
+</body>
+
+</html>

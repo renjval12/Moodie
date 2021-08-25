@@ -1,2 +1,4 @@
-# MOD1Project_Moodie
-A movie and tv listing website, that returns movies to the user based on their personality.
+# Moodie
+Streaming Website - based on your Personality type
+
+this project is a WORK IN PROGRESS

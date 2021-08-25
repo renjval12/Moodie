@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .elementToFadeIn {
+            width: 200px;
+            height: 200px;
+            background: red;
+            position: fixed;
+            display: block;
+            animation: fadeIn 1s linear forwards;
+        }
+
+        .elementToFadeOut {
+            width: 200px;
+            height: 200px;
+            position: fixed;
+            animation: fadeOut 1s linear forwards;
+        }
+
+        #q1,
+        #q2,
+        #q3 {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+        }
+
+        #q1 {
+            background-color: aqua;
+            z-index: 1;
+        }
+
+        #q-btn-1 {
+            position: fixed;
+            top: 120px;
+        }
+
+        #q2 {
+            background-color: red;
+            z-index: 0;
+        }
+
+        .q-btn-2p {
+            position: fixed;
+            top: 140px;
+        }
+
+
+        .q-btn-2n {
+            position: fixed;
+            top: 160px;
+        }
+
+        #q3 {
+            background-color: purple;
+            z-index: 0;
+        }
+
+        .q-btn-3p {
+            position: fixed;
+            top: 180px;
+        }
+        .q-btn-3n {
+            position: fixed;
+            top: 200px;
+        }
+
+        .hide {
+            opacity: 0;
+        }
+
+        .show {
+            opacity: 100;
+        }
+
+        /* 
+        button {
+            position: fixed;
+            top: 225px;
+        } */
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeOut {
+
+            0% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="q1">Hello World</div>
+    <button id="q-btn-1" onclick="toggleQuestion(1,2)">next</button>
+    <div id="q2">Bye Bye World</div>
+    <button class="q-btn-2p" onclick="toggleQuestion(2,1)">previous</button>
+    <button class="q-btn-2n" onclick="toggleQuestion(2,3)">next</button>
+    <div id="q3">Hello Again World</div>
+    <button class="q-btn-3p" onclick="toggleQuestion(3,2)">previous</button>
+    <button class="q-btn-3n" onclick="toggleQuestion(3,4)">next</button>
+
+
+    <script>
+        function toggleQuestion(questionChangeNum, questionKeepNum) {
+            document.getElementById(`q${questionChangeNum}`).style.display = 'block'
+            document.getElementById(`q${questionKeepNum}`).style.display = 'none'
+
+
+
+            // console.log(window.getComputedStyle(document.getElementById('q1'), null).getPropertyValue("z-index"))
+            // document.getElementById(`question-${fadeOutElem}`).classList.toggle('elementToFadeOut')
+            // document.getElementById(`question-${fadeInElem}`).classList.toggle('elementToFadeIn')
+            // document.getElementById(`q${fadeInElem}-${firstBtnType}-btn`).remove('hide')
+            // document.getElementById(`q${fadeInElem}-${secondBtnType}-btn`).remove('hide')
+            // document.getElementById(`question-${fadeInElem}`).classList.toggle('elementToFadeIn')
+        }
+    </script>
+</body>
+
+</html>

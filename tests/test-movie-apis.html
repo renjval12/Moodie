@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="test-api" onload="fetchPosterData()"></div>
+    <img id="movie-poster" onload="moviePoster()" alt="">
+
+
+    <script>
+        // let br = document.createElement("br")
+        // fetch("https://api.themoviedb.org/3/keyword/12565?api_key=cb8d9e3ce40b1e83a927a5763c2c5ed4")
+        //     .then((response) => response.json())
+        //     .then((data) => console.log(data))
+        //     .catch('error')
+
+
+        // fetch("https://api.themoviedb.org/3/movie/31011/images?api_key=cb8d9e3ce40b1e83a927a5763c2c5ed4")
+        //     .then((response) => response.json())
+        //     .then((data) => console.log(data))
+        //     .catch('error')
+
+
+
+        // moviePoster = (d) => {
+        //     document.getElementById('movie-poster').src = `https://image.tmdb.org/t/p/w500${d.posters[0]}`
+        // 
+
+
+        fetch("https://api.themoviedb.org/3/movie/31011/images?api_key=cb8d9e3ce40b1e83a927a5763c2c5ed4")
+            .then(response => response.json())
+            .then(data => console.log(data))
+            .then(data => getMoviePoster(data))
+
+
+        function getMoviePoster(d) {
+            return d.posters[0]
+        }
+
+
+    </script>
+</body>
+
+</html>
