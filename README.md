@@ -1,7 +1,9 @@
 # Moodie
-Moodie is a full stack application TV and Movie Listing website, which returns listings based on the results of a personality quiz of the user's choosing. 
+Moodie is a full stack application TV and Movie Listing website, which fetches data from The MovieDB API to return movie and tv listings based on the results of a personality quiz of the user's choosing. 
 
 The intended demographic is 18-55 years old. 
+
+Prototype: https://xd.adobe.com/view/fa4f87c2-b7a2-49ad-577a-478463460447-8c7e/
 
 https://github.com/renjval12/MOD1Project_Moodie
 
