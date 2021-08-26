@@ -3,6 +3,8 @@ Moodie is a full stack application TV and Movie Listing website, which fetches d
 
 The intended demographic is 18-55 years old. 
 
+API: https://developers.themoviedb.org/
+
 Prototype: https://xd.adobe.com/view/fa4f87c2-b7a2-49ad-577a-478463460447-8c7e/
 
 https://github.com/renjval12/MOD1Project_Moodie
