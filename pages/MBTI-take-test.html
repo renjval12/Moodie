@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moodie - You Are What You Watch</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d4306395b0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav id="navigation-bar">
+            <img id="moodie-icon" src="/images/Drama-icon.png" alt="moodie-icon">
+            <h1 id="moodie-name">Moodie</h1>
+            <section class="header-nav-links">
+                <a class="nav-link header-nav-links" href="/index.html">Home</a></li>
+                <a class="nav-link header-nav-links" href="/pages/about.html">About Us</a></li>
+                <a class="nav-link header-nav-links" href="/pages/personality-test-page.html">Choose a Test</a>
+                </li>
+                <a class="nav-link header-nav-links" href="/pages/contact-us.html">Contact</a></li>
+            </section>
+
+            <form class="search-bar" action="/action_page.php">
+                <input id="search-input" type="text" name="search" placeholder="Search...">
+                <button id="search-btn" type="submit"><i class="fas fa-search" aria-hidden="true"></i></button>
+            </form>
+            <a class="nav-link header-nav-links login" href="/pages/login.html">Login</a>
+        </nav>
+    </header><main>
+        <form id="form1" class="form1">
+            <div class="questions-body">
+                <p class="question-txt">My friends and family consider me a perfectionist.</p>
+                <label><input type="radio" name="choice1" id="agree" value="1">Agree</label>
+                <label><input type="radio" name="choice1" id="neutral" value="2">Neutral</label>
+                <label><input type="radio" name="choice1" id="disagree" value="3">Disagree</label>
+
+                <p class="question-txt">I consider myself a wallflower at parties.</p>
+                <label><input type="radio" name="choice2" id="agree" value="1">Agree</label>
+                <label><input type="radio" name="choice2" id="neutral" value="2">Neutral</label>
+                <label><input type="radio" name="choice2" id="disagree" value="3">Disagree</label>
+
+                <p class="question-txt">I am uncomfortable in crowds.</p>
+                <label><input type="radio" name="choice3" id="agree" value="1">Agree</label>
+                <label><input type="radio" name="choice3" id="neutral" value="2">Neutral</label>
+                <label><input type="radio" name="choice3" id="disagree" value="3">Disagree</label>
+
+                <p class="question-txt">I am described as a stoic person.</p>
+                <label><input type="radio" name="choice4" id="agree" value="1">Agree</label>
+                <label><input type="radio" name="choice4" id="neutral" value="2">Neutral</label>
+                <label><input type="radio" name="choice4" id="disagree" value="3">Disagree</label>
+
+                <p class="question-txt">I have a hard time understanding other's emotions.</p>
+
+                <label><input type="radio" name="choice5" id="agree" value="1">Agree</label>
+                <label><input type="radio" name="choice5" id="neutral" value="2">Neutral</label>
+                <label><input type="radio" name="choice5" id="disagree" value="3">Disagree</label>
+            </div>
+
+            <button class="submit-test-btn" type="submit" value="Submit">Submit</button>
+
+        </form>
+        <section id="results">
+            <h1 id="personality-type" class="top-of-page-heading"></h1>
+
+            <section id="movie1">
+                <img id="movie-poster1" src="" alt="">
+                <h2 id="movie-option1" class="section-heading"></h2>
+            </section>
+
+            <section id="movie2">
+                <img id="movie-poster2" src="" alt="">
+                <h2 id="movie-option2" class="section-heading"></h2>
+            </section>
+            
+            <section id="movie3">
+                <img id="movie-poster3" src="" alt="">
+                <h2 id="movie-option3" class="section-heading"></h2>
+            </section>
+        </section>
+        <script src="/mbti-test.js"></script>
+    </main>
+
+
+        
+    <footer>
+        <a class="contact-foot-link nav-link footer-nav-links" href="/pages/contact-us.html">Contact</a>
+        <a class="site-map-foot-link nav-link footer-nav-links" href="/pages/sitemap.html">Site Map</a>
+        <a class="about-foot-link nav-link footer-nav-links" href="/pages/about.html">About</a>
+        <div id="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+        <div id="license">
+            <img id="moodie-logo" src="/images/Moodie-logo.png" alt="">
+            <p class="copyright">©2021 Moodie, Inc.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -18,6 +18,7 @@ document.getElementById("form1").onsubmit = function () {
 
     total = choice1 + choice2 + choice3 + choice4 + choice5;
 
+    document.getElementById("your-results").innerHTML = ""
     document.getElementById("personality-type").innerHTML = ""
     movieOption1 = ""
     movieOption2 = ""
@@ -35,6 +36,7 @@ document.getElementById("form1").onsubmit = function () {
         movieDeets(70160, moviePoster2)
         movieDeets(522212, moviePoster3)
 
+        document.getElementById("your-results").innerHTML = "Your Results!"
         document.getElementById("personality-type").innerHTML = "The Peacemaker"
         document.getElementById("movie-option1").innerHTML = "Selma"
         document.getElementById("movie-option2").innerHTML = "Hunger Games";
@@ -46,6 +48,7 @@ document.getElementById("form1").onsubmit = function () {
         movieDeets(4922, moviePoster2)
         movieDeets(587, moviePoster3)
 
+        document.getElementById("your-results").innerHTML = "Your Results!"
         document.getElementById("personality-type").innerHTML = "The Enthusiast"
         document.getElementById("movie-option1").innerHTML = "Inside Out";
         document.getElementById("movie-option2").innerHTML = "The Curious Case of Benjamin Button";
@@ -58,6 +61,7 @@ document.getElementById("form1").onsubmit = function () {
         movieDeets(84892, moviePoster2)
         movieDeets(302401, moviePoster3)
         
+    document.getElementById("your-results").innerHTML = "Your Results!"
         document.getElementById("personality-type").innerHTML = "The Individualist"
         document.getElementById("movie-option1").innerHTML = "Pariah";
         document.getElementById("movie-option2").innerHTML = "Perks of Being a Wallflower";
@@ -68,6 +72,7 @@ document.getElementById("form1").onsubmit = function () {
         movieDeets(146233, moviePoster2)
         movieDeets(146233, moviePoster3)
         
+    document.getElementById("your-results").innerHTML = "Your Results!"
         document.getElementById("personality-type").innerHTML = "The Investigator"
         document.getElementById("movie-option1").innerHTML = "Nightcrawler";
         document.getElementById("movie-option2").innerHTML = "Doubt";

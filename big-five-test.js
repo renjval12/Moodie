@@ -23,6 +23,7 @@ document.getElementById("form1").onsubmit = function () {
             .then((data) => posterNum.src = `https://image.tmdb.org/t/p/w500${data.poster_path}`)
             .catch('error')
     }
+    
     document.getElementById("personality-type").innerHTML = ""
     movieOption1 = ""
     movieOption2 = ""
