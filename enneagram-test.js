@@ -14,6 +14,7 @@ let movieOption3 = document.getElementById('movie-option3')
 // created a function that calculates the values of the user's selections on the personality test, and returns three movie suggestions for the user to consider watching. 
 
 document.getElementById("form1").onsubmit = function () {
+    document.getElementById('results').style.display = "block" 
     // created multiple variables to hold the number values of the user selection in the quiz. The values from the radio button selections are what is passed through as the value. parseInt turns the first character in finds into a string, then into a integer.
 
     choice1 = parseInt(document.querySelector('input[name = "choice1"]:checked').value);
@@ -26,7 +27,7 @@ document.getElementById("form1").onsubmit = function () {
 
     total = choice1 + choice2 + choice3 + choice4 + choice5;
 
-    document.getElementById("your-results").innerHTML = ""
+    
     document.getElementById("personality-type").innerHTML = ""
     movieOption1 = ""
     movieOption2 = ""
@@ -54,7 +55,6 @@ document.getElementById("form1").onsubmit = function () {
         movieDeets(70160, moviePoster2)
         movieDeets(522212, moviePoster3)
 
-        document.getElementById("your-results").innerHTML = "Your Results!"
         document.getElementById("personality-type").innerHTML = "The Peacemaker"
         document.getElementById("movie-option1").innerHTML = "Selma"
         document.getElementById("movie-option2").innerHTML = "Hunger Games";
@@ -67,7 +67,6 @@ document.getElementById("form1").onsubmit = function () {
         movieDeets(587, moviePoster3)
 
         //here the values of these elements in  change from empty in the 
-        document.getElementById("your-results").innerHTML = "Your Results!"
         document.getElementById("personality-type").innerHTML = "The Enthusiast"
         document.getElementById("movie-option1").innerHTML = "Inside Out";
         document.getElementById("movie-option2").innerHTML = "The Curious Case of Benjamin Button";
@@ -80,7 +79,6 @@ document.getElementById("form1").onsubmit = function () {
         movieDeets(84892, moviePoster2)
         movieDeets(302401, moviePoster3)
         
-    document.getElementById("your-results").innerHTML = "Your Results!"
         document.getElementById("personality-type").innerHTML = "The Individualist"
         document.getElementById("movie-option1").innerHTML = "Pariah";
         document.getElementById("movie-option2").innerHTML = "Perks of Being a Wallflower";
@@ -91,7 +89,6 @@ document.getElementById("form1").onsubmit = function () {
         movieDeets(146233, moviePoster2)
         movieDeets(146233, moviePoster3)
         
-    document.getElementById("your-results").innerHTML = "Your Results!"
         document.getElementById("personality-type").innerHTML = "The Investigator"
         document.getElementById("movie-option1").innerHTML = "Nightcrawler";
         document.getElementById("movie-option2").innerHTML = "Doubt";

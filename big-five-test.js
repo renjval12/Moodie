@@ -14,8 +14,8 @@ let movieOption3 = document.getElementById('movie-option3')
 // created a function that calculates the values of the user's selections on the personality test, and returns three movie suggestions for the user to consider watching. 
 
 document.getElementById("form1").onsubmit = function () {
+    document.getElementById('results').style.display = "block" 
     // created multiple variables to hold the number values of the user selection in the quiz. The values from the radio button selections are what is passed through as the value. parseInt turns the first character in finds into a string, then into a integer.
-
     choice1 = parseInt(document.querySelector('input[name = "choice1"]:checked').value);
     choice2 = parseInt(document.querySelector('input[name = "choice2"]:checked').value);
     choice3 = parseInt(document.querySelector('input[name = "choice3"]:checked').value);
@@ -34,6 +34,13 @@ document.getElementById("form1").onsubmit = function () {
     // to make my code more dynamic, I created a callback function, that fetches and returns data from the MovieDB API database. 
     // id parameter corresponds to the movie id unique to each movie title on themoviedb
     //posterNum parameter corresponds to the element ID of the element that will hold the image
+    function movieTitle(id, movieTitle) {
+        fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=cb8d9e3ce40b1e83a927a5763c2c5ed4`)
+            .then((response) => response.json())
+            .then((data) => movieTitle.src = `https://image.tmdb.org/t/p/w500${data.poster_path}`)
+            .catch('error')
+    }
+
 
     function movieDeets(id, posterNum) {
         // when the function is run, first it fetches data, based on the id argument passed in when called
@@ -41,7 +48,7 @@ document.getElementById("form1").onsubmit = function () {
         fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=cb8d9e3ce40b1e83a927a5763c2c5ed4`)
             //then it returns a response, I convert that response, into a json file, so I will be able to parse through the data in the form of Javascript Objects. 
             .then((response) => response.json())
-            
+
             // i use .then promise method, to utilize the data I received from the moviedb api 
             //I need the api to return the value of the property named "poster_path", so I can append it to the base_url for images on moviedb, and return the movie's poster image, so I do that, once I get the data, I use dot notation to access the value of the poster_path. 
             .then((data) => posterNum.src = `https://image.tmdb.org/t/p/w500${data.poster_path}`)
@@ -85,7 +92,7 @@ document.getElementById("form1").onsubmit = function () {
         document.getElementById("movie-option2").innerHTML = "Little Miss Sunshine";
         document.getElementById("movie-option3").innerHTML = "Bring It On";
     }
-    if (total >= 15 && total < 19) {
+    if (total >= 15 && total < 18) {
         movieDeets(2005, moviePoster1)
         movieDeets(9377, moviePoster2)
         movieDeets(324857, moviePoster3)
