@@ -41,6 +41,7 @@ document.getElementById("form1").onsubmit = function () {
         fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=cb8d9e3ce40b1e83a927a5763c2c5ed4`)
             //then it returns a response, I convert that response, into a json file, so I will be able to parse through the data in the form of Javascript Objects. 
             .then((response) => response.json())
+            
             // i use .then promise method, to utilize the data I received from the moviedb api 
             //I need the api to return the value of the property named "poster_path", so I can append it to the base_url for images on moviedb, and return the movie's poster image, so I do that, once I get the data, I use dot notation to access the value of the poster_path. 
             .then((data) => posterNum.src = `https://image.tmdb.org/t/p/w500${data.poster_path}`)
@@ -55,7 +56,7 @@ document.getElementById("form1").onsubmit = function () {
         movieDeets(116745, moviePoster2)
         movieDeets(37165, moviePoster3)
 
-        //here the values of these elements in  change from empty in the 
+        //here the values of these elements in  change from empty to the values below in the DOM
         document.getElementById("personality-type").innerHTML = "Open"
         document.getElementById("movie-option1").innerHTML = "Wrinkle In Time"
         document.getElementById("movie-option2").innerHTML = "The Secret Life of Walter Mitty";
