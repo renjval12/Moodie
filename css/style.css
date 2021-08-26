@@ -530,7 +530,9 @@ input[type="radio"] {
 
 #movie-poster1, #movie-poster2, #movie-poster3 {
     max-width: 300px;
+    
 }
+
 
 
 /* one offs */
@@ -577,15 +579,23 @@ textarea::placeholder {
     max-width: 200px;
 }
 
-/* .blue-blk-btn {
+.blue-blk-btn {
     color: black;
     background-color: #0BB7FF;
 }
 
-.white-blk-btn {}
+.white-blk-btn {
+    color: white;
+    background-color: black;
+}
 
-.blk-white-btn {}
+.blk-white-btn {
+    
+    color: black;
+    background-color: white;
+}
 
-.white-blk-btn {}
-
-.blue-white-btn {} */
+.blue-white-btn {
+    color: #0BB7FF;
+    background-color: white;
+}
