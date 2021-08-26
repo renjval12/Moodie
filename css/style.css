@@ -607,6 +607,7 @@ textarea::placeholder {
         grid-template: 1fr/1fr;
         padding: 0;
         margin: 0;
+        background: white;
     }
     #img-of-about {
         grid-area: 1/2/2/3;
@@ -615,8 +616,6 @@ textarea::placeholder {
     #bottom-home-page {
         background-size: cover;
         grid-template: 1fr/1fr;
-        padding: 0;
-        margin: 0;
     }
     #about-section-home {
         grid-area: 1/3/2/4;
