@@ -22,7 +22,8 @@
             <section class="header-nav-links">
                 <a class="nav-link header-nav-links" href="/index.html">Home</a></li>
                 <a class="nav-link header-nav-links" href="/pages/about.html">About Us</a></li>
-                <a class="nav-link header-nav-links" href="/pages/personality-test-page.html">Choose a Test</a></li>
+                <a class="nav-link header-nav-links" href="/pages/personality-test-page.html">Choose a Test</a>
+                </li>
                 <a class="nav-link header-nav-links" href="/pages/contact-us.html">Contact</a></li>
             </section>
 
@@ -30,150 +31,85 @@
                 <input id="search-input" type="text" name="search" placeholder="Search...">
                 <button id="search-btn" type="submit"><i class="fas fa-search" aria-hidden="true"></i></button>
             </form>
-            <!-- <section class="search-icon">
-        <form action="/action_page.php">
-            <button type="submit"><i class="fas fa-search" aria-hidden="true"></i></button>
-        </form>
-    </section>-->
             <a class="nav-link header-nav-links login" href="/pages/login.html">Login</a>
         </nav>
     </header>
     <main>
-        <section id="love-languages-intro">
-            <h1 class="main-heading love-languages-test-heading">Love Languages Test</h1>
+        <section id="mbti-intro">
+            <h1 class="top-of-page-heading mbti-test-heading">Big Five Personality Test</h1>
             <h2 class="section-heading">The Test</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem inventore eveniet iusto. Distinctio vitae
+            <p class="section-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem inventore
+                eveniet iusto. Distinctio vitae
                 minus debitis cum quisquam modi atque voluptates suscipit porro eius similique magnam, unde id, est
                 veniam.
             </p>
             <h2 class="section-heading">How to Take the Test</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias amet saepe iure sapiente, maxime,
+            <p class="section-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias amet saepe
+                iure sapiente, maxime,
                 doloribus,
                 recusandae perspiciatis mollitia porro qui a.</p>
-            <button>Start</button>
+            <button onclick="document.querySelector('#form1').classList.remove('hide')">Start</button>
         </section>
-        <section id="love-languages-q1" class="question-1">
-            <h2 class="section-heading">Question # 1</h2>
-            <p class="test-question"></p>
-            <form action="">
-                <span>Strongly Agree</span>
-                <span>Agree</span>
-                <span>Neutral</span>
-                <span>Disagree</span>
-                <span>Strongly Disagree</span>
-                <input class="range slider" type="range" id="volume" min="0" max="5" value="10" step="1">
-                <button class="blue-blk-btn">Next</button>
-            </form>
-        </section>
-        <section id="love-languages-q2" class="question-2">
-            <h2 class="section-heading">Question # 2</h2>
-            <p class="test-question"></p>
-            <span>Strongly Agree</span>
-            <span>Agree</span>
-            <span>Neutral</span>
-            <span>Disagree</span>
-            <span>Strongly Disagree</span>
-            <input class="range slider" type="range" id="volume" min="0" max="5" value="10" step="1">
-            <button>Previous</button>
-            <button class="blue-blk-btn">Next</button>
-        </section>
-        <section id="love-languages-q3" class="question-3">
-            <h2 class="section-heading">Question # 3</h2>
-            <p class="test-question"></p>
-            <h1></h1>
-            <span>Strongly Agree</span>
-            <span>Agree</span>
-            <span>Neutral</span>
-            <span>Disagree</span>
-            <span>Strongly Disagree</span>
-            <input class="range slider" type="range" id="volume" min="0" max="5" value="10" step="1">
-            <button>Previous</button>
-            <button class="blue-blk-btn">Next</button>
-        </section>
-        <section id="love-languages-q4" class="question-4">
-            <h2 class="section-heading">Question # 4</h2>
-            <p class="test-question"></p>
-            <span>Strongly Agree</span>
-            <span>Agree</span>
-            <span>Neutral</span>
-            <span>Disagree</span>
-            <span>Strongly Disagree</span>
-            <input class="range slider" type="range" id="volume" min="0" max="5" value="10" step="1">
-            <button>Previous</button>
-            <button class="blue-blk-btn">Next</button>
-        </section>
-        <section id="love-languages-q5" class="question-5">
-            <h2 class="section-heading">Question # 5</h2>
-            <p class="test-question"></p>
-            <span>Strongly Agree</span>
-            <span>Agree</span>
-            <span>Neutral</span>
-            <span>Disagree</span>
-            <span>Strongly Disagree</span>
-            <input class="range slider" type="range" id="volume" min="0" max="5" value="10" step="1">
-            <button>Previous</button>
-            <button class="blue-blk-btn">Next</button>
-        </section>
-        <section id="love-languages-q6" class="question-6">
-            <h2 class="section-heading">Question # 6</h2>
-            <p class="test-question"></p>
-            <span>Strongly Agree</span>
-            <span>Agree</span>
-            <span>Neutral</span>
-            <span>Disagree</span>
-            <span>Strongly Disagree</span>
-            <input class="range slider" type="range" id="volume" min="0" max="5" value="10" step="1">
-            <button>Previous</button>
-            <button class="blue-blk-btn">Next</button>
-        </section>
-        <section id="love-languages-q7" class="question-7">
-            <h2 class="section-heading">Question # 7</h2>
-            <p class="test-question"></p>
-            <span>Strongly Agree</span>
-            <span>Agree</span>
-            <span>Neutral</span>
-            <span>Disagree</span>
-            <span>Strongly Disagree</span>
-            <input class="range slider" type="range" id="volume" min="0" max="5" value="10" step="1">
-            <button>Previous</button>
-            <button class="blue-blk-btn">Next</button>
-        </section>
-        <section id="love-languages-q8" class="question-8">
-            <h2 class="section-heading">Question # 8</h2>
-            <p class="test-question"></p>
-            <span>Strongly Agree</span>
-            <span>Agree</span>
-            <span>Neutral</span>
-            <span>Disagree</span>
-            <span>Strongly Disagree</span>
-            <input class="range slider" type="range" id="volume" min="0" max="5" value="10" step="1">
-            <button>Previous</button>
-            <button class="blue-blk-btn">Next</button>
-        </section>
-        <section id="love-languages-q9" class="question-9">
-            <h2 class="section-heading">Question # 9</h2>
-            <p class="test-question"></p>
-            <span>Strongly Agree</span>
-            <span>Agree</span>
-            <span>Neutral</span>
-            <span>Disagree</span>
-            <span>Strongly Disagree</span>
-            <input class="range slider" type="range" id="volume" min="0" max="5" value="10" step="1">
-            <button>Previous</button>
-            <button class="blue-blk-btn">Next</button>
-        </section>
-        <section id="love-languages-q10" class="question-10">
-            <h2 class="section-heading">Question # 10</h2>
-            <p class="test-question"></p>
-            <span>Strongly Agree</span>
-            <span>Agree</span>
-            <span>Neutral</span>
-            <span>Disagree</span>
-            <span>Strongly Disagree</span>
-            <input class="range slider" type="range" id="volume" min="0" max="5" value="10" step="1">
-            <button>Previous</button>
-            <button class="blue-blk-btn">Submit</button>
-        </section>
+
+        <form id="form1" class="hide">
+            <div id="love-languages-q1">
+                <p>It's meaningful when my partner:</p>
+                <label><input type="radio" name="choice1" id="gifts" value="1" />Buys me something I've had my eye on.</label>
+                <label><input type="radio" name="choice1" id="act-of-service" value="2"/>Helps me with a difficult task.</label>
+                <label><input type="radio" name="choice1" id="physical-affection" value="3"/>Get a hug from a loved one.</label>
+                <label><input type="radio" name="choice1" id="words-of-affirmation" value="4"/>Tells me I'm attractive.</label>
+                <label><input type="radio" name="choice1" id="quality-time" value="5"/>Go somewhere nice with me.</label>
+            </div>
+            <div id="love-languages-q2">
+                <p>It's meaningful to me when:</p>
+                <label><input type="radio" name="choice2" id="gifts" value="1" />Pays for me at dinner.</label>
+                <label><input type="radio" name="choice2" id="act-of-service" value="2"/>Some I love does something I had no time to do.</label>
+                <label><input type="radio" name="choice2" id="physical-affection" value="3"/>Publicly displays affection.</label>
+                <label><input type="radio" name="choice2" id="words-of-affirmation" value="4"/>Flirts with me.</label>
+                <label><input type="radio" name="choice2" id="quality-time" value="5"/>I travel with a partner.</label>
+            </div>
+            <div id="love-languages-q3">
+                <p>It's meaningful when my partner:</p>
+                <label><input type="radio" name="choice3" id="gifts" value="1" />Buys me a thoughtful gifts on my birthday.</label>
+                <label><input type="radio" name="choice3" id="act-of-service" value="2"/>Stands up for me.</label>
+                <label><input type="radio" name="choice3" id="physical-affection" value="3"/>Holds my hands when we walk down the street.</label>
+                <label><input type="radio" name="choice3" id="words-of-affirmation" value="4"/>Randomly tells me they love me.</label>
+                <label><input type="radio" name="choice3" id="quality-time" value="5"/>Watches movies or tv with me at home.</label>
+            </div>
+            <div id="love-languages-q4">
+                <p>It's meaningful when:</p>
+                <label><input type="radio" name="choice4" id="gifts" value="1" />Someone I love buys me flowers.</label>
+                <label><input type="radio" name="choice4" id="act-of-service" value="2"/>Helps me with a difficult task.</label>
+                <label><input type="radio" name="choice4" id="physical-affection" value="3"/>Someone I love, smiles at me to let me know they care.</label>
+                <label><input type="radio" name="choice4" id="words-of-affirmation" value="4"/>Someone I love, calls me attractive.</label>
+                <label><input type="radio" name="choice4" id="quality-time" value="5"/>I go on adventures with my loved one.</label>
+            </div>
+            <div id="love-languages-q5">
+                <p>It's meaningful when my partner:</p>
+                <label><input type="radio" name="choice5" id="gifts" value="1" />Contributes financially to our lifestyle.</label>
+                <label><input type="radio" name="choice5" id="act-of-service" value="2"/>Does nice things for me instead of telling me they will.</label>
+                <label><input type="radio" name="choice5" id="physical-affection" value="3"/>I can be physically close to a loved one.</label>
+                <label><input type="radio" name="choice5" id="words-of-affirmation" value="4"/>Someone I love tells me they're proud of me.</label>
+                <label><input type="radio" name="choice5" id="quality-time" value="5"/>Helps me with a difficult task.</label>
+            </div>
+
+            <button type="submit" value="Submit">Submit</button>
+
+        </form>
+
+        <h1 id="personality-type" class="top-of-page-heading"></h1>
+
+        <img id="movie-poster1" src="" alt="">
+        <h2 id="movie-option1" class="section-heading"></h2>
+
+        <img id="movie-poster2" src="" alt="">
+        <h2 id="movie-option2" class="section-heading"></h2>
+
+        <img id="movie-poster3" src="" alt="">
+        <h2 id="movie-option3" class="section-heading"></h2>
+
+        </div>
+        <script src="/love-languages-test.js"></script>
     </main>
     <footer>
         <a class="contact-foot-link nav-link footer-nav-links" href="/pages/contact-us.html">Contact</a>
@@ -187,7 +123,8 @@
         </div>
         <div id="license">
             <img id="moodie-logo" src="/images/Moodie-logo.png" alt="">
-            <p class="copyright">©2021 Moodie, Inc.</p></div>
+            <p class="copyright">©2021 Moodie, Inc.</p>
+        </div>
     </footer>
 </body>
 

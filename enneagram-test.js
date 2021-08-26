@@ -23,20 +23,18 @@ document.getElementById("form1").onsubmit = function () {
     movieOption2 = ""
     movieOption3 = ""
 
+    function movieDeets(id, posterNum) {
+        fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=cb8d9e3ce40b1e83a927a5763c2c5ed4`)
+            .then((response) => response.json())
+            .then((data) => posterNum.src = `https://image.tmdb.org/t/p/w500${data.poster_path}`)
+            .catch('error')
+    }
+    
     if (total < 6) {
+        movieDeets(273895, moviePoster1)
+        movieDeets(70160, moviePoster2)
+        movieDeets(522212, moviePoster3)
 
-        fetch("https://api.themoviedb.org/3/movie/273895?api_key=cb8d9e3ce40b1e83a927a5763c2c5ed4")
-            .then((response) => response.json())
-            .then((data) => moviePoster1.src = `https://image.tmdb.org/t/p/w500${data.poster_path}`)
-            .catch('error')
-        fetch("https://api.themoviedb.org/3/movie/70160?api_key=cb8d9e3ce40b1e83a927a5763c2c5ed4")
-            .then((response) => response.json())
-            .then((data) => moviePoster2.src = `https://image.tmdb.org/t/p/w500${data.poster_path}`)
-            .catch('error')
-        fetch("https://api.themoviedb.org/3/movie/522212?api_key=cb8d9e3ce40b1e83a927a5763c2c5ed4")
-            .then((response) => response.json())
-            .then((data) => moviePoster3.src = `https://image.tmdb.org/t/p/w500${data.poster_path}`)
-            .catch('error')
         document.getElementById("personality-type").innerHTML = "The Peacemaker"
         document.getElementById("movie-option1").innerHTML = "Selma"
         document.getElementById("movie-option2").innerHTML = "Hunger Games";
@@ -44,18 +42,10 @@ document.getElementById("form1").onsubmit = function () {
     }
 
     if (total >= 6 && total < 9) {
-        fetch("https://api.themoviedb.org/3/movie/150540?api_key=cb8d9e3ce40b1e83a927a5763c2c5ed4")
-            .then((response) => response.json())
-            .then((data) => moviePoster1.src = `https://image.tmdb.org/t/p/w500${data.poster_path}`)
-            .catch('error')
-        fetch("https://api.themoviedb.org/3/movie/4922?api_key=cb8d9e3ce40b1e83a927a5763c2c5ed4")
-            .then((response) => response.json())
-            .then((data) => moviePoster2.src = `https://image.tmdb.org/t/p/w500${data.poster_path}`)
-            .catch('error')
-        fetch("https://api.themoviedb.org/3/movie/https://www.themoviedb.org/movie/587-big-fish?api_key=cb8d9e3ce40b1e83a927a5763c2c5ed4")
-            .then((response) => response.json())
-            .then((data) => moviePoster3.src = `https://image.tmdb.org/t/p/w500${data.poster_path}`)
-            .catch('error')
+        movieDeets(150540, moviePoster1)
+        movieDeets(4922, moviePoster2)
+        movieDeets(587, moviePoster3)
+
         document.getElementById("personality-type").innerHTML = "The Enthusiast"
         document.getElementById("movie-option1").innerHTML = "Inside Out";
         document.getElementById("movie-option2").innerHTML = "The Curious Case of Benjamin Button";
@@ -64,36 +54,20 @@ document.getElementById("form1").onsubmit = function () {
     }
 
     if (total >= 9 && total < 14) {
-        fetch("https://api.themoviedb.org/3/movie/73939?api_key=cb8d9e3ce40b1e83a927a5763c2c5ed4")
-            .then((response) => response.json())
-            .then((data) => moviePoster1.src = `https://image.tmdb.org/t/p/w500${data.poster_path}`)
-            .catch('error')
-        fetch("https://api.themoviedb.org/3/movie/84892?api_key=cb8d9e3ce40b1e83a927a5763c2c5ed4")
-            .then((response) => response.json())
-            .then((data) => moviePoster2.src = `https://image.tmdb.org/t/p/w500${data.poster_path}`)
-            .catch('error')
-        fetch("https://api.themoviedb.org/3/movie/302401?api_key=cb8d9e3ce40b1e83a927a5763c2c5ed4")
-            .then((response) => response.json())
-            .then((data) => moviePoster3.src = `https://image.tmdb.org/t/p/w500${data.poster_path}`)
-            .catch('error')
+        movieDeets(73939, moviePoster1)
+        movieDeets(84892, moviePoster2)
+        movieDeets(302401, moviePoster3)
+        
         document.getElementById("personality-type").innerHTML = "The Individualist"
         document.getElementById("movie-option1").innerHTML = "Pariah";
         document.getElementById("movie-option2").innerHTML = "Perks of Being a Wallflower";
         document.getElementById("movie-option3").innerHTML = "Snowden";
     }
     if (total >= 13) {
-        fetch("https://api.themoviedb.org/3/movie/242582?api_key=cb8d9e3ce40b1e83a927a5763c2c5ed4")
-            .then((response) => response.json())
-            .then((data) => moviePoster1.src = `https://image.tmdb.org/t/p/w500${data.poster_path}`)
-            .catch('error')
-        fetch("https://api.themoviedb.org/3/movie/14359?api_key=cb8d9e3ce40b1e83a927a5763c2c5ed4")
-            .then((response) => response.json())
-            .then((data) => moviePoster2.src = `https://image.tmdb.org/t/p/w500${data.poster_path}`)
-            .catch('error')
-        fetch("https://api.themoviedb.org/3/movie/146233?api_key=cb8d9e3ce40b1e83a927a5763c2c5ed4")
-            .then((response) => response.json())
-            .then((data) => moviePoster3.src = `https://image.tmdb.org/t/p/w500${data.poster_path}`)
-            .catch('error')
+        movieDeets(242582, moviePoster1)
+        movieDeets(146233, moviePoster2)
+        movieDeets(146233, moviePoster3)
+        
         document.getElementById("personality-type").innerHTML = "The Investigator"
         document.getElementById("movie-option1").innerHTML = "Nightcrawler";
         document.getElementById("movie-option2").innerHTML = "Doubt";

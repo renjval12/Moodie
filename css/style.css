@@ -300,8 +300,8 @@ main {
 
 .section-description {
     grid-area: 3/3/4/4;
-    padding: 0 20%;
-    text-align: justify;
+    /* padding: 0 15%;
+    text-align: justify; */
 }
 
 #about-moodie-img, #about-the-founder-img {
@@ -431,13 +431,48 @@ main {
     grid-area: 2/4/3/5;
 }
 
-.choose-a-test-img{
+.choose-a-test-img {
     max-width: 200px;
 }
 
 /* End of Choose a Test Page */
 
 /* MBTI Test Page */
+
+#mbti-intro {
+    display: grid;
+    grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    padding: 5% 0;
+}
+
+#about-the-test {
+    grid-area: 2/2/3/3;
+    padding: 0;
+}
+
+.mbti-test-heading {
+    grid-area: 1/2/2/3;
+}
+
+#how-to-take-test {
+    grid-area: 3/2/4/3;
+}
+
+#start-mbti-test-btn {
+    grid-area: 4/2/5/3;
+}
+
+.test-page-heading {
+    grid-area: 1/2/2/3;
+    padding: 0 5%;
+}
+
+.about-test-heading {
+    padding: 5% 0;
+}
 
 .hide {
     display: none;
