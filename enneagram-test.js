@@ -14,7 +14,7 @@ let movieOption3 = document.getElementById('movie-option3')
 // created a function that calculates the values of the user's selections on the personality test, and returns three movie suggestions for the user to consider watching. 
 
 document.getElementById("form1").onsubmit = function () {
-    document.getElementById('results').style.display = "block" 
+    document.getElementById('results').classList.remove('hide') 
     // created multiple variables to hold the number values of the user selection in the quiz. The values from the radio button selections are what is passed through as the value. parseInt turns the first character in finds into a string, then into a integer.
 
     choice1 = parseInt(document.querySelector('input[name = "choice1"]:checked').value);
@@ -86,7 +86,7 @@ document.getElementById("form1").onsubmit = function () {
     }
     if (total >= 13) {
         movieDeets(242582, moviePoster1)
-        movieDeets(146233, moviePoster2)
+        movieDeets(14359, moviePoster2)
         movieDeets(146233, moviePoster3)
         
         document.getElementById("personality-type").innerHTML = "The Investigator"
