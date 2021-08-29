@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "eslint": "^7.32.0",
     "fetch": "^1.1.0",
     "traitify": "^2.2.0"
   }
