@@ -12,86 +12,77 @@
     <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200;300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/d4306395b0.js" crossorigin="anonymous"></script>
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel" src="/js/main.js"></script>
 </head>
 
-<body >
-    <header>
-        <nav id="navigation-bar">
-            <div id="name-and-icon">
-                <img id="moodie-icon" src="/images/Drama-icon.png" alt="moodie-icon">
-                <h1 id="moodie-name">Moodie</h1>
-            </div>
-            <section class="header-nav-links">
-                <a class="nav-link header-nav-links" href="/index.html">Home</a></li>
-                <a class="nav-link header-nav-links" href="/pages/about.html">About Us</a></li>
-                <a class="nav-link header-nav-links" href="/pages/personality-test-page.html">Choose a Test</a>
-                </li>
-                <a class="nav-link header-nav-links" href="/pages/contact-us.html">Contact</a></li>
-            </section>
-
-            <form class="search-bar" action="/action_page.php">
-                <input id="search-input" type="text" name="search" placeholder="Search...">
-                <button id="search-btn" type="submit"><i class="fas fa-search" aria-hidden="true"></i></button>
-            </form>
-            <a class="nav-link header-nav-links login" href="/pages/login.html">Login</a>
-        </nav>
+<body>
+    <header id="navi">
     </header>
     <main>
-        <form id="form1" class="form1">
-            <div class="questions-body">
+        <section id="test-area">
+            <h1 class="top-of-page-heading">Myers-Briggs Personality Test</h1>
+            <form id="form1" class="form1">
+                <div class="questions-body">
                 <p class="question-txt">My friends and family consider me a perfectionist.</p>
-                <label><input type="radio" name="choice1" id="agree" value="1">Agree</label>
-                <label><input type="radio" name="choice1" id="neutral" value="2">Neutral</label>
-                <label><input type="radio" name="choice1" id="disagree" value="3">Disagree</label>
+                <label><input type="radio" name="choice1" id="agree" value="1" required>Agree</label>
+                <label><input type="radio" name="choice1" id="neutral" value="2" required>Neutral</label>
+                <label><input type="radio" name="choice1" id="disagree" value="3" required>Disagree</label>
 
                 <p class="question-txt">I consider myself a wallflower at parties.</p>
-                <label><input type="radio" name="choice2" id="agree" value="1">Agree</label>
-                <label><input type="radio" name="choice2" id="neutral" value="2">Neutral</label>
-                <label><input type="radio" name="choice2" id="disagree" value="3">Disagree</label>
+                <label><input type="radio" name="choice2" id="agree" value="1" required>Agree</label>
+                <label><input type="radio" name="choice2" id="neutral" value="2" required>Neutral</label>
+                <label><input type="radio" name="choice2" id="disagree" value="3" required>Disagree</label>
 
                 <p class="question-txt">I am uncomfortable in crowds.</p>
-                <label><input type="radio" name="choice3" id="agree" value="1">Agree</label>
-                <label><input type="radio" name="choice3" id="neutral" value="2">Neutral</label>
-                <label><input type="radio" name="choice3" id="disagree" value="3">Disagree</label>
+                <label><input type="radio" name="choice3" id="agree" value="1" required>Agree</label>
+                <label><input type="radio" name="choice3" id="neutral" value="2" required>Neutral</label>
+                <label><input type="radio" name="choice3" id="disagree" value="3" required>Disagree</label>
 
                 <p class="question-txt">I am described as a stoic person.</p>
-                <label><input type="radio" name="choice4" id="agree" value="1">Agree</label>
-                <label><input type="radio" name="choice4" id="neutral" value="2">Neutral</label>
-                <label><input type="radio" name="choice4" id="disagree" value="3">Disagree</label>
+                <label><input type="radio" name="choice4" id="agree" value="1" required>Agree</label>
+                <label><input type="radio" name="choice4" id="neutral" value="2" required>Neutral</label>
+                <label><input type="radio" name="choice4" id="disagree" value="3" required>Disagree</label>
 
                 <p class="question-txt">I have a hard time understanding other's emotions.</p>
 
-                <label><input type="radio" name="choice5" id="agree" value="1">Agree</label>
-                <label><input type="radio" name="choice5" id="neutral" value="2">Neutral</label>
-                <label><input type="radio" name="choice5" id="disagree" value="3">Disagree</label>
-            </div>
+                <label><input type="radio" name="choice5" id="agree" value="1" required>Agree</label>
+                <label><input type="radio" name="choice5" id="neutral" value="2" required>Neutral</label>
+                <label><input type="radio" name="choice5" id="disagree" value="3" required>Disagree</label>
+                <button class="submit-test-btn" type="submit" value="Submit">Submit</button>
+                </div>
+            </form>
 
-            <button class="submit-test-btn" type="submit" value="Submit">Submit</button>
-
-        </form>
-        <section id="results">
             <h1 id="personality-type" class="top-of-page-heading"></h1>
+            <section id="results" class="hide">
+                <section id="movie1">
+                    <img id="movie-poster1" src="" alt="">
+                    <h2 id="movie-option1" class="section-heading"></h2>
+                    <p id="movie-description1" class="movie-choice-description"></p>
 
-            <section id="movie1">
-                <img id="movie-poster1" src="" alt="">
-                <h2 id="movie-option1" class="section-heading"></h2>
-            </section>
+                </section>
 
-            <section id="movie2">
-                <img id="movie-poster2" src="" alt="">
-                <h2 id="movie-option2" class="section-heading"></h2>
-            </section>
-            
-            <section id="movie3">
-                <img id="movie-poster3" src="" alt="">
-                <h2 id="movie-option3" class="section-heading"></h2>
+                <section id="movie2">
+                    <img id="movie-poster2" src="" alt="">
+                    <h2 id="movie-option2" class="section-heading"></h2>
+                    <p id="movie-description2" class="movie-choice-description"></p>
+
+                </section>
+
+                <section id="movie3">
+                    <img id="movie-poster3" src="" alt="">
+                    <h2 id="movie-option3" class="section-heading"></h2>
+                    <p id="movie-description3" class="movie-choice-description"></p>
+                </section>
             </section>
         </section>
         <script src="/mbti-test.js"></script>
     </main>
 
 
-        
+
     <footer>
         <a class="contact-foot-link nav-link footer-nav-links" href="/pages/contact-us.html">Contact</a>
         <a class="site-map-foot-link nav-link footer-nav-links" href="/pages/sitemap.html">Site Map</a>

@@ -6,75 +6,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moodie - You Are What You Watch</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <!-- <link rel="stylesheet" href="/css/style.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200;300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/d4306395b0.js" crossorigin="anonymous"></script>
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel" src="/js/main.js"></script>
+    <link rel="stylesheet" href="/css/test-page.css">
 </head>
 
 <body>
-    <header>
-        <nav id="navigation-bar">
-            <div id="name-and-icon">
-                <img id="moodie-icon" src="/images/Drama-icon.png" alt="moodie-icon">
-                <h1 id="moodie-name">Moodie</h1>
-            </div>
-            <section class="header-nav-links">
-                <a class="nav-link header-nav-links" href="/index.html">Home</a></li>
-                <a class="nav-link header-nav-links" href="/pages/about.html">About Us</a></li>
-                <a class="nav-link header-nav-links" href="/pages/personality-test-page.html">Choose a Test</a></li>
-                <a class="nav-link header-nav-links" href="/pages/contact-us.html">Contact</a></li>
-            </section>
-
-            <form class="search-bar" action="/action_page.php">
-                <input id="search-input" type="text" name="search" placeholder="Search...">
-                <button id="search-btn" type="submit"><i class="fas fa-search" aria-hidden="true"></i></button>
-            </form>
-            <!-- <section class="search-icon">
-        <form action="/action_page.php">
-            <button type="submit"><i class="fas fa-search" aria-hidden="true"></i></button>
-        </form>
-    </section>-->
-            <a class="nav-link header-nav-links login" href="/pages/login.html">Login</a>
-        </nav>
+    <header id="navi">
     </header>
-    <main id="choose-test-page">
-        <h1 class="choose-a-test-heading top-of-page-heading">Choose a Test</h1>
-        <section style="justify-items: center;" class="mbti-test-select">
-            <a style="text-decoration: none; color: white;" href="/pages/MBTI-test-page.html">
-                <img class="choose-a-test-img" src="/images/array of profiles.jpg"
-                    alt="an array of portrait animations of different types of people">
-                <h2>MBTI Test</h2>
-                <button class="select-button">Select</button>
-            </a>
+    <main>
+        <h1 id="choose-a-test-heading" class="top-of-page-heading">Choose-a-Test</h1>
+        <section id="list">
+            <div id="img1">
+                <a href="/pages/MBTI-test-page.html">
+                    <div class="emp-div emp-div1"></div>
+                    <h2 class="word w1">MBTI</h2>
+                    <img class="image" src="/images/multi-faces.gif"></img>
+                </a>
+
+            </div>
+            <div id="img2">
+                <a href="/pages/Enneagram-test-page.html">
+                    <div class="emp-div emp-div2"></div>
+                    <h2 class="word w2">Enneagram</h2>
+                    <img class="image" src="/images/masks.gif"></img>
+                </a>
+            </div>
+            <div id="img3">
+                <a href="/pages/Big-Five-test-page.html">
+                    <div class="emp-div emp-div3"></div>
+                    <h2 class="word w3">Big Five</h2>
+                    <img class="image" src="/images/walk-on-ledge.gif"></img>
+                </a>
+            </div>
+            <div id="img4">
+                <a href="/pages/Love-Languages-test-page.html">
+                    <div class="emp-div emp-div4"></div>
+                    <h2 class="word w4">Love Languages</h2>
+                    <img id="weird-img" class="image" src="/images/massage_face.gif"></img>
+                </a>
+            </div>
+        </section>
+        <!-- <h1 class="choose-a-test-heading top-of-page-heading">Choose a Test</h1>
+        <section class="mbti-test-select">
+            <img class="choose-a-test-img" src="/images/array of profiles.jpg"
+                alt="an array of portrait animations of different types of people">
+            <h2>MBTI Test</h2>
+            <button class="select-button">Select</button>
         </section>
         <section class="enneagram-test-select">
-            <a style="text-decoration: none; color: white;" href="/pages/Enneagram-test-page.html">
-                <img class="choose-a-test-img" src="/images/Moods.jpg" alt="Photo of an array of emojis">
-                <h2>Enneagram of Personality Test</h2>
-                <button class="select-button">Select</button>
-            </a>
-
+            <img class="choose-a-test-img" src="/images/Moods.jpg" alt="Photo of an array of emojis">
+            <h2>Enneagram of Personality Test</h2>
+            <button class="select-button">Select</button>
         </section>
         <section class="big-five-test-select">
-            <a style="text-decoration: none; color: white;" href="/pages/Big-Five-test-page.html">
-                <img class="choose-a-test-img" class="test-img" src="/images/5.jpg" alt="Photo of the number five">
-                <h2>Big Five Test</h2>
-                <button class="select-button">Select</button>
-            </a>
+            <img class="choose-a-test-img" class="test-img" src="/images/5.jpg" alt="Photo of the number five">
+            <h2>Big Five Test</h2>
+            <button class="select-button">Select</button>
         </section>
         <section class="love-languages-test-select">
-            <a style="text-decoration: none; color: white; " href="/pages/Love-Languages-test-page.html">
-                <img class="choose-a-test-img"
-                    src="/images/red-paper-origami-heart-with-wings-cloud-blue-background.jpg"
-                    alt="Photo of a paper origami heart">
-                <h2>Love Languages Test</h2>
-                <button class="select-button">Select</button>
-        </section>
-        </section>
-
+            <img class="choose-a-test-img" src="/images/red-paper-origami-heart-with-wings-cloud-blue-background.jpg"
+                alt="Photo of a paper origami heart">
+            <h2>Love Languages Test</h2>
+            <button class="select-button">Select</button>
+        </section> -->
 
     </main>
     <footer>
