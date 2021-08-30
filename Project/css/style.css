@@ -1,0 +1,780 @@
+html, body, main, section, div, footer, nav, button, h1, h2, h3, img, p, input, header, a, label #header-nav {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-family: 'Changa', sans-serif;
+}
+
+body {
+    color: white;
+    background: black;
+}
+
+header, footer {
+    background: white;
+    color: black;
+}
+
+#header-nav ul {
+    display: grid;
+    grid-template: 1fr/min-content repeat(5, max-content) 1fr min-content;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 1% 2%;
+    gap: 2%;
+}
+
+.nav-link, #moodie-name {
+    text-decoration: none;
+    color: black;
+}
+
+#masks-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+#masks-icon {
+    max-width: 50px;
+    max-height: 30px;
+    padding: 0;
+}
+
+.nav-link:hover {
+    color: #0BB7FF;
+    font-weight: bold;
+    text-decoration: underline dotted black;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 4px;
+    margin: -1px;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: end;
+}
+
+/* header {
+    display: flex;
+    flex-direction: column
+} */
+
+footer {
+    display: grid;
+    grid-template: repeat(2, min-content)/repeat(5, 1fr);
+    padding: 1%;
+    justify-items: center;
+    align-items: center;
+}
+
+/* Header */
+
+/* Navigation Bar */
+
+/* #navigation-bar {
+    display: grid;
+    grid-template: min-content/max-content 1fr max-content min-content;
+    gap: 1%;
+    padding: 1% 3%;
+    align-items: center;
+}
+
+#moodie-icon {
+    width: 40px;
+    height: 30px;
+}
+
+#name-and-icon {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}*/
+
+#masks-icon:hover {
+    animation: wigglemasks 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes wigglemasks {
+    from {
+        transform: rotate(-30deg);
+    }
+    to {
+        transform: rotate(30deg);
+    }
+}
+
+#moodie-name {
+    font-size: 1.5em;
+    grid-area: 1/ 2/ 2/ 3;
+    font-weight: 670;
+    font-size: 1.7rem;
+    letter-spacing: -0.05em;
+    width: max-content;
+    color: black;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+
+#moodie-name:hover {
+    background: linear-gradient(rgb(195, 235, 252), rgb(0, 160, 228));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+Search Bar .search-bar {
+    display: flex;
+    justify-content: end;
+}
+
+#search-input {
+    padding-left: 1%;
+}
+
+#search-btn {
+    padding: 0 2.5%;
+    height: 100%;
+    border-radius: 0;
+}
+
+/* Login button */
+
+.login {
+    font-size: 1.2em;
+    align-self: center;
+}
+
+/*End of header section*/
+
+/* Footer and Header link attributes */
+
+a.nav-link:hover {
+    font-weight: bold;
+    text-decoration: underline black;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 4px;
+}
+
+a.header-nav-links, a.footer-nav-links {
+    text-decoration: none;
+    color: #0BB7FF;
+}
+
+/* Beginning of Footer Section */
+
+.contact-foot-link {
+    grid-area: 1/2/2/3;
+}
+
+.site-map-foot-link {
+    grid-area: 1/3/2/4;
+}
+
+.about-foot-link {
+    grid-area: 1/4/2/5;
+}
+
+#license {
+    grid-area: 2/3/3/4;
+    display: grid;
+    grid-template: repeat(2, 1fr)/1fr;
+    justify-items: center;
+    gap: 1%;
+    padding: 1%;
+}
+
+#social-links {
+    grid-area: 3/3/4/4;
+    color: #0BB7FF
+}
+
+#moodie-logo {
+    width: 50%
+}
+
+.fab {
+    color: #0BB7FF;
+}
+
+/* Beginning of Top of Home Page Section */
+
+main {
+    background: no-repeat url(/images/Background\ Design\ 1@2x.png);
+    background-size: 100%;
+}
+
+#top-home-page {
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr/repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+/*Introduction Content*/
+
+#tagline-heading {
+    grid-area: 2/2/3/3;
+    text-align: center;
+    align-self: end;
+    font-size: 3.5vw;
+}
+
+#home-page-blurb {
+    grid-area: 3/2/4/3;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#home-page-start-btn {
+    grid-area: 4/2/5/3;
+}
+
+/* Beginning of Middle of Home Page Section */
+
+#middle-home-page {
+    display: grid;
+    grid-template: repeat(3, min-content)/10% repeat(2, 1fr) 10%;
+    align-items: center;
+    background: url(/images/Background\ Design\ 2@2x.png ) no-repeat;
+    color: #0BB7FF;
+    padding: 10% 0 0 0;
+}
+
+/* Beginning of About Us Introduction Section */
+
+#img-of-about {
+    grid-area: 2/2/3/3;
+    max-width: 500px;
+}
+
+#about-section-home {
+    grid-area: 2/3/3/4;
+    display: grid;
+    grid-template: repeat(3, 1fr)/1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.about-content {
+    padding: 0 15%;
+    text-align: center;
+}
+
+/* .section-heading.about-section {
+    grid-area: 2/3/3/4;
+    align-self: flex-end;
+}
+
+.about-content {
+    grid-area: 3/3/4/4;
+}
+
+#more-about-us {
+    grid-area: 4/3/5/4;
+} */
+
+/*Beginning of bottom of page section*/
+
+#bottom-home-page {
+    display: grid;
+    grid-template: 1fr 1fr 20% 1fr/10% repeat(4, 1fr) 10%;
+    align-items: center;
+    justify-items: center;
+    padding: 10% 0%;
+    background: url(/images/Background\ Design\ Blue\ 2@2x.png) no-repeat;
+    background-size: cover;
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+.test-subheading {
+    padding: 0 20%;
+}
+
+#test-types-heading {
+    grid-area: 1/3/2/5;
+}
+
+#mbti-name-subheading {
+    grid-area: 3/2/4/3;
+}
+
+#mbti-rep-img {
+    grid-area: 2/2/3/3;
+}
+
+#enneagram-name-subheading {
+    grid-area: 3/3/4/4;
+}
+
+#enneagram-rep-img {
+    grid-area: 2/3/3/4;
+}
+
+#big-five-name-subheading {
+    grid-area: 3/4/4/5;
+}
+
+#big-five-rep-img {
+    grid-area: 2/4/3/5;
+}
+
+#love-languages-name-subheading {
+    grid-area: 3/5/4/6;
+}
+
+#love-languages-rep-img {
+    grid-area: 2/5/3/6;
+}
+
+#see-all-tests-btn {
+    grid-area: 4/3/5/5;
+    align-self: center;
+    justify-self: center;
+}
+
+/*End of bottom of page section*/
+
+/* End of Home Page Content*/
+
+/* about page */
+
+#about-website {
+    display: grid;
+    grid-template: 1fr 20% repeat(2, 1fr)/10% repeat(2, 1fr) 10%;
+    align-items: center;
+    justify-items: center;
+}
+
+#about-heading {
+    grid-area: 1/2/2/4;
+}
+
+#about-moodie-section-heading {
+    grid-area: 2/3/3/4;
+    align-self: end;
+}
+
+.section-description {
+    grid-area: 3/3/4/4;
+    /* padding: 0 15%;
+    text-align: justify; */
+}
+
+#about-moodie-img, #about-the-founder-img {
+    max-width: 500px;
+    grid-area: 2/2/4/3;
+}
+
+/* About the Tests section */
+
+#about-the-tests {
+    display: grid;
+    grid-template: 20% 1fr/repeat(4, 1fr);
+    gap: 5%;
+    justify-items: center;
+    padding: 10% 5%;
+    background: url(/images/Background\ Design\ 2@2x.png ) no-repeat;
+    color: #0BB7FF
+}
+
+#mbti-test-description, #enneagram-test-description, #big-five-test-description, #love-languages-test-description {
+    display: grid;
+    align-items: start;
+    justify-items: center;
+    text-align: center;
+}
+
+#about-tests-heading {
+    grid-area: 1/2/2/4;
+}
+
+#mbti-test-description {
+    grid-area: 2/1/3/2;
+}
+
+#enneagram-test-description {
+    grid-area: 2/2/3/3;
+}
+
+#big-five-test-description {
+    grid-area: 2/3/3/4;
+}
+
+#love-languages-test-description {
+    grid-area: 2/4/3/5;
+}
+
+/* About the Founder */
+
+#about-the-founder {
+    display: grid;
+    grid-template: min-content 1fr min-content/10% repeat(2, 1fr) 10%;
+    align-items: center;
+    justify-items: center;
+    background: url(/images/Background\ Design\ Blue\ 2@2x.png) no-repeat;
+    background-size: cover;
+    background-color: white;
+    padding: 15% 0
+}
+
+#about-founder-description {
+    grid-area: 2/2/3/3;
+    padding: 15% 0 0 0;
+    text-align: center;
+}
+
+#about-the-founder-img {
+    grid-area: 2/3/3/4;
+}
+
+/* end of about page */
+
+/* beginning of contact page */
+
+#contact-page {
+    display: grid;
+    grid-template: 20% 1fr 20%/repeat(3, 1fr);
+    padding: 15% 0;
+}
+
+#contact-form {
+    display: grid;
+    grid-template: 1fr/1fr;
+    grid-area: 2/2/3/3;
+    background-color: #0BB7FF;
+    color: black;
+    padding: 10%;
+    border-radius: 50px;
+}
+
+#submit-contact-btn {
+    display: block;
+    margin: 5% 0;
+    justify-self: center;
+}
+
+/* end of contact page */
+
+/* Beginning of Choose a Test Page */
+
+#choose-test-page {
+    display: grid;
+    grid-template: repeat(3, 1fr)/repeat(4, 1fr);
+    padding: 5%;
+    gap: 2%;
+    align-items: center;
+    justify-items: center;
+}
+
+.choose-a-test-heading.top-of-page-heading {
+    grid-area: 1/2/2/4;
+    text-align: center;
+}
+
+.mbti-test-select {
+    grid-area: 2/1/3/2;
+}
+
+.enneagram-test-select {
+    grid-area: 2/2/3/3;
+}
+
+.big-five-test-select {
+    grid-area: 2/3/3/4;
+}
+
+.love-languages-test-select {
+    grid-area: 2/4/3/5;
+}
+
+.choose-a-test-img {
+    max-width: 200px;
+}
+
+/* End of Choose a Test Page */
+
+/* Test Pages */
+
+.test-intro {
+    background: url(/images/Background\ Design\ Blue\ 2@2x.png) no-repeat;
+    background-size: 100%;
+    background-color: white;
+}
+
+#mbti-intro, #enneagram-intro, #big-five-intro, #love-languages-intro {
+    display: grid;
+    grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    padding: 3% 0 15% 0;
+}
+
+.about-the-test {
+    grid-area: 2/2/3/3;
+    padding: 0;
+}
+
+.mbti-test-heading, .enneagram-test-heading, .big-five-test-heading, .love-language-test-heading {
+    grid-area: 1/2/2/3;
+}
+
+.how-to-take-test {
+    grid-area: 3/2/4/3;
+}
+
+.start-test-btn {
+    grid-area: 4/2/5/3;
+}
+
+.test-page-heading {
+    grid-area: 1/2/2/3;
+    padding: 0 5%;
+}
+
+.about-test-heading {
+    padding: 5% 0;
+}
+
+.question-txt {
+    font-size: 1.5em;
+}
+
+#test-area {
+    padding: 10% 0 0 0;
+}
+
+#form1 {
+    display: flex;
+    justify-content: center;
+    /* display: grid;
+    grid-template: repeat(2, min-content) 1fr/1fr;*/
+    /* align-items: center; */
+    /* justify-items: center; */
+}
+
+.questions-body {
+    /* grid-area: 2/1/3/2; */
+    background-color: #0BB7FF;
+    padding: 5%;
+    border-radius: 2em;
+}
+
+input[type="radio"] {
+    display: block;
+}
+
+.submit-test-btn {
+    display: block;
+    justify-content: center;
+    /* margin: 5% 0; */
+}
+
+#results {
+    display: flex;
+    gap: 5%;
+    padding: 5% 0;
+    text-align: justify;
+    justify-content: center;
+}
+
+#personality-type {
+    display: flex;
+    justify-content: center;
+    padding: 5% 0 0 0;
+}
+
+#movie1 {
+    max-width: min-content;
+}
+
+#movie2 {
+    max-width: min-content;
+}
+
+#movie3 {
+    max-width: min-content;
+}
+
+#movie-poster1, #movie-poster2, #movie-poster3 {
+    max-width: 300px;
+}
+
+/* one offs */
+
+button, input[type="submit"] {
+    width: max-content;
+    height: max-content;
+    padding: .25em 2em;
+    border-radius: 50px;
+}
+
+input[type="submit"] {
+    display: block;
+}
+
+.btn-link {
+    text-decoration: none;
+}
+
+.top-of-page-heading {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.section-heading {
+    font-size: 1.5rem;
+}
+
+textarea {
+    font-size: 100%;
+    font-family: 'Changa', sans-serif;
+}
+
+textarea::placeholder {
+    font-weight: 100;
+}
+
+#test-selections {
+    display: grid;
+    grid-template: 1fr/repeat(4, 1fr);
+    justify-content: space-evenly;
+}
+
+.test-img {
+    max-width: 200px;
+}
+
+/* .btn {
+    border: none;
+    font-family: 'changa';
+    font-size: ;
+    background: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    display: inline-block;
+    margin: 15px 30px;
+    /* text-transform: uppercase; */
+    font-weight: 400;
+    outline: none;
+    /* position: relative; */
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.btn-1 {
+    background: #0BB7FF;
+    box-shadow: 0 6px #98b8c6c2;
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+}
+.btn-1 a, .btn-2 a {
+    color: black;
+}
+
+.btn-1 {
+    border-radius: 20px;
+}
+
+.btn-1:hover {
+    box-shadow: 0 4px #ffffff;
+    /* top: 2px; */
+}
+
+.btn-1:active {
+    box-shadow: 0 0 #0e85b8;
+    top: 6px;
+} */
+
+/* a.blue-blk-btn {
+    color: black;
+    background-color: #0BB7FF;
+}
+
+.white-blk-btn {
+    color: white;
+    background-color: black;
+}
+
+.blk-white-btn {
+    color: black;
+    background-color: white;
+}
+
+.blue-white-btn {
+    color: #0BB7FF;
+    background-color: white;
+} */
+
+@media (max-width: 800px) {
+    html, body, main, section, div, footer, nav, h1, h2, h3, img, p, input, header, a, label #middle-home-page {
+        margin: 0;
+        padding: 0;
+        font-size: 100%;
+        font-family: 'Changa', sans-serif;
+    }
+    /* #navigation-bar {
+        display: grid;
+        grid-template: min-content/max-content 1fr min-content;
+    } */
+    .header-nav-links {
+        justify-self: center;
+    }
+    .search-bar {
+        display: none;
+    }
+    #home-page-blurb {
+        font-size: 1rem;
+    }
+    .choose-a-test-img {
+        max-width: 100%;
+    }
+    #middle-home-page {
+        grid-template: 1fr/1fr;
+        padding: 0;
+        margin: 0;
+        background: white;
+    }
+    #img-of-about {
+        max-width: 100%
+    }
+    #bottom-home-page {
+        background-size: cover;
+        grid-template: 1fr/1fr;
+    }
+    #about-section-home {
+        display: flex;
+        align-items: space-evenly;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        padding: 10% 0;
+        background-size: 100%;
+    }
+    .test-img {
+        max-width: 50%;
+    }
+    #movie-poster1, #movie-poster2, #movie-poster3 {
+        max-width: 50%
+    }
+    #movie-option1, #movie-option2, #movie-option3, #personality-type, .question-txt {
+        font-size: 100%;
+    }
+    #about-the-tests {
+        display: flex;
+        flex-direction: column;
+    }
+    #about-the-founder {
+        display: flex;
+        flex-direction: column;
+        padding: 0 5%;
+    }
+}
