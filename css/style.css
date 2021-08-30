@@ -652,10 +652,9 @@ textarea::placeholder {
     max-width: 200px;
 }
 
-/* .btn {
+.btn {
     border: none;
     font-family: 'changa';
-    font-size: ;
     background: none;
     cursor: pointer;
     padding: 5px 10px;
@@ -693,7 +692,7 @@ textarea::placeholder {
 .btn-1:active {
     box-shadow: 0 0 #0e85b8;
     top: 6px;
-} */
+} 
 
 /* a.blue-blk-btn {
     color: black;
@@ -716,7 +715,7 @@ textarea::placeholder {
 } */
 
 @media (max-width: 800px) {
-    html, body, main, section, div, footer, nav, h1, h2, h3, img, p, input, header, a, label #middle-home-page {
+    html, body, main, section, div, footer, nav, h1, h2, h3, img, p, input, header, a, label {
         margin: 0;
         padding: 0;
         font-size: 100%;
