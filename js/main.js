@@ -24,7 +24,7 @@ class NavBar extends React.Component {
         return (
             <nav id="header-nav">
                 <ul>
-                    <img id="masks-icon" src="/images/Drama-icon.png" />
+                    <img id="masks-icon" src="./images/Drama-icon.png" />
                     <li><h1><a id="moodie-name" href={pageLinks[0].url}>Moodie</a></h1></li>
                     {headerLinks}
                     <li>
