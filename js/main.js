@@ -41,6 +41,8 @@ class NavBar extends React.Component {
     }
 }
 
+alert('this is new')
+
 // let tests = [
 //     {
 //         className: 'Home',
