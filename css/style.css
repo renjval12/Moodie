@@ -183,7 +183,7 @@ a.header-nav-links, a.footer-nav-links {
 /* Beginning of Top of Home Page Section */
 
 main {
-    background: no-repeat url(/images/Background\ Design\ 1@2x.png);
+    background: no-repeat url(./images/Background\ Design\ 1@2x.png);
     background-size: 100%;
 }
 
@@ -219,7 +219,7 @@ main {
     display: grid;
     grid-template: repeat(3, min-content)/10% repeat(2, 1fr) 10%;
     align-items: center;
-    background: url(/images/Background\ Design\ 2@2x.png ) no-repeat;
+    background: url(./images/Background\ Design\ 2@2x.png ) no-repeat;
     color: #0BB7FF;
     padding: 10% 0 0 0;
 }
@@ -265,7 +265,7 @@ main {
     align-items: center;
     justify-items: center;
     padding: 10% 0%;
-    background: url(/images/Background\ Design\ Blue\ 2@2x.png) no-repeat;
+    background: url(./images/Background\ Design\ Blue\ 2@2x.png) no-repeat;
     background-size: cover;
     background-color: white;
     color: black;
@@ -361,7 +361,7 @@ main {
     gap: 5%;
     justify-items: center;
     padding: 10% 5%;
-    background: url(/images/Background\ Design\ 2@2x.png ) no-repeat;
+    background: url(./images/Background\ Design\ 2@2x.png ) no-repeat;
     color: #0BB7FF
 }
 
@@ -401,7 +401,7 @@ main {
     justify-items: center;
     gap: 5%;
     padding: 5% 0 10% 0;
-    background: url(/images/Background\ Design\ Blue\ 2@2x.png) no-repeat;
+    background: url(./images/Background\ Design\ Blue\ 2@2x.png) no-repeat;
     background-size: cover;
     background-color: white;
     padding: 15% 0;
@@ -521,7 +521,7 @@ main {
 /* Test Pages */
 
 .test-intro {
-    background: url(/images/Background\ Design\ Blue\ 2@2x.png) no-repeat;
+    background: url(./images/Background\ Design\ Blue\ 2@2x.png) no-repeat;
     background-size: 110%;
     background-color: white;
 }

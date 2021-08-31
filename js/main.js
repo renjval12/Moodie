@@ -1,19 +1,19 @@
 ﻿let pageLinks = [
     {
         name: 'Home',
-        url: '/index.html'
+        url: './index.html'
     },
     {
         name: 'About',
-        url: '/pages/about.html'
+        url: './pages/about.html'
     },
     {
         name: 'Choose a Test',
-        url: '/pages/personality-test-page.html'
+        url: './pages/personality-test-page.html'
     },
     {
         name: 'Contact',
-        url: '/pages/contact-us.html'
+        url: './pages/contact-us.html'
     }
 ]
 
