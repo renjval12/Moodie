@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moodie - You Are What You Watch</title>
-    <link rel="stylesheet" href="/MOD1Project_Moodie/css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200;300;400;500;600;700;800&display=swap"
@@ -16,53 +16,60 @@
     <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
-    <script type="text/babel" src="/MOD1Project_Moodie/js/main.js"></script>
+    <script type="text/babel" src="/js/main.js"></script>
 </head>
 
 <body>
     <header id="navi">
     </header>
     <main id="about-page">
+        <h1 id="about-heading" class="top-of-page-heading">About Page</h1>
         <section id="about-website">
-            <h1 id="about-heading" class="top-of-page-heading">About Page</h1>
-            <h2 id="about-moodie-section-heading" class="section-heading">About Moodie</h2>
-            <p class="section-description">Moodie is a streaming app that gives you TV and Film options that catered to
-                your unique personality and interests. All the user needs to do is take a short personality test of
-                their choice, and we use the data from that test, to first determine the user’s personality type, and
-                then the movies and tv shows they’d likely enjoy.</p>
-            <img id="about-moodie-img" src="/MOD1Project_Moodie/images/movie-outside.jpg" alt="">
+            <div class="about-section-description" id="about-moodie-desc">
+                <h2 id="about-moodie-section-heading" class="section-heading">About Moodie</h2>
+                <p>Moodie is a streaming app that gives you TV and Film options that
+                    catered to
+                    your unique personality and interests. All the user needs to do is take a short personality test of
+                    their choice, and we use the data from that test, to first determine the user’s personality type,
+                    and
+                    then the movies and tv shows they’d likely enjoy.</p>
+            </div>
+            <img id="about-moodie-img" src="/images/movie-outside.jpg" alt="">
         </section>
         <section id="about-the-tests">
             <h2 id="about-tests-heading" class="section-heading">The Tests</h2>
-            <div id="mbti-test-description">
-                <img id="mbti-about-img" class="test-img" src="/MOD1Project_Moodie/images/array of profiles.jpg"
+            <div id="mbti-test-description" class="test-description">
+                <img id="mbti-about-img" class="test-img" src="/images/array of profiles.jpg"
                     alt="an array of portrait animations of different types of people">
                 <h3 class="subheading">Myers-Briggs Type Indicator</h3>
-                <p>In personality typology, the Myers–Briggs Type Indicator (MBTI) is an introspective self-report
+                <p class="about-section-description">In personality typology, the Myers–Briggs Type Indicator (MBTI) is
+                    an introspective self-report
                     questionnaire indicating differing psychological preferences in how people perceive the world and
                     make decisions. The test attempts to assign four categories: introversion or extraversion, sensing
                     or intuition, thinking or feeling, judging or perceiving. One letter from each category is taken to
                     produce a four-letter test result, such as "INFJ" or "ENFP". <a
                         href="https://en.wikipedia.org/wiki/Myers%E2%80%93Briggs_Type_Indicator">Read more</a>.</p>
 
-                <button class="go-to-test-btn"><a href="/MOD1Project_Moodie/pages/personality-test-page.html">Go to the Tests</a></button>
+                <button class="go-to-test-btn"><a href="/pages/personality-test-page.html">Go to the Tests</a></button>
             </div>
-            <div id="enneagram-test-description">
-                <img id="enneagram-about-img" class="test-img" src="/MOD1Project_Moodie/images/Moods.jpg"
+            <div id="enneagram-test-description" class="test-description">
+                <img id="enneagram-about-img" class="test-img" src="/images/Moods.jpg"
                     alt="Photo of an array of emojis">
                 <h3 class="subheading"> Enneagram of Personality</h3>
-                <p>The Enneagram of Personality, or simply the Enneagram (from the Greek words ἐννέα [ennéa, meaning
+                <p class="about-section-description">The Enneagram of Personality, or simply the Enneagram (from the
+                    Greek words ἐννέα [ennéa, meaning
                     "nine"] and γράμμα [grámma, meaning something "written" or "drawn"]), is a model of the human psyche
                     which is principally understood and taught as a typology of nine interconnected personality types.
                     <a href="https://en.wikipedia.org/wiki/Enneagram_of_Personality">Read More</a>.
                 </p>
 
-                <button class="go-to-test-btn"><a href="/MOD1Project_Moodie/pages/personality-test-page.html">Go to the Tests</a></button>
+                <button class="go-to-test-btn"><a href="/pages/personality-test-page.html">Go to the Tests</a></button>
             </div>
-            <div id="big-five-test-description">
-                <img id="big-five-about-img" class="test-img" src="/MOD1Project_Moodie/images/5.jpg" alt="Photo of the number five">
+            <div id="big-five-test-description" class="test-description">
+                <img id="big-five-about-img" class="test-img" src="/images/5.jpg" alt="Photo of the number five">
                 <h3 class="subheading">The Big Five</h3>
-                <p>The Big Five personality traits is a suggested taxonomy, or grouping, for
+                <p class="about-section-description">The Big Five personality traits is a suggested taxonomy, or
+                    grouping, for
                     personality traits, developed from the 1980s onwards in psychological trait theory. When factor
                     analysis
                     (a statistical technique) is applied to personality survey data, it reveals semantic associations:
@@ -73,14 +80,15 @@
                     and
                     psyche. <a href="https://en.wikipedia.org/wiki/Big_Five_personality_traits">Read More</a>.</p>
 
-                <button class="go-to-test-btn"><a href="/MOD1Project_Moodie/pages/personality-test-page.html">Go to the Tests</a></button>
+                <button class="go-to-test-btn"><a href="/pages/personality-test-page.html">Go to the Tests</a></button>
             </div>
-            <div id="love-languages-test-description">
+            <div id="love-languages-test-description" class="test-description">
                 <img id="love-languages-about-img" class="test-img"
-                    src="/MOD1Project_Moodie/images/red-paper-origami-heart-with-wings-cloud-blue-background.jpg"
+                    src="/images/red-paper-origami-heart-with-wings-cloud-blue-background.jpg"
                     alt="Photo of a paper origami heart">
                 <h3 class="subheading">The Five Love Languages</h3>
-                <p>The Five Love Languages: How to Express Heartfelt Commitment to Your
+                <p class="about-section-description">The Five Love Languages: How to Express Heartfelt Commitment to
+                    Your
                     Mate is a 1992 book by Gary Chapman.[1] It outlines five general ways that romantic partners express
                     and
                     experience love, which Chapman calls "love languages". They are acts of service, gift-giving,
@@ -88,26 +96,27 @@
                     touch, quality time, and words of affirmation. <a
                         href="https://en.wikipedia.org/wiki/The_Five_Love_Languages">Read More</a>.</p>
 
-                <button class="go-to-test-btn"><a href="/MOD1Project_Moodie/pages/personality-test-page.html">Go to the Tests</a></button>
+                <button class="go-to-test-btn"><a href="/pages/personality-test-page.html">Go to the Tests</a></button>
             </div>
         </section>
         <section id="about-the-founder">
-            <div id="about-founder-description">
-                <h2 id="about-founder-heading" class="section-heading"> The Founder</h2>
-                <p>Renee Valentine is a NYC-based Fullstack developer. They have a background
+            <div id="about-the-founder-desc">
+                <h2 id="about-founder-heading" class="section-heading"> The Founder</h2> 
+                <p class="about-section-description">Renee Valentine is a NYC-based Fullstack developer. They have a
+                    background
                     in film, television, and screenwriting. Recognizing a gap in the streaming market that caters
                     directly
                     to the unique interests of the viewer, Renee developed Moodie as a way to fill that gap, and give
                     the
                     viewer, exactly what they want. </p>
             </div>
-            <img id="about-the-founder-img" src="/MOD1Project_Moodie/images/image-of-founder@2x.png" alt="">
+            <img id="about-the-founder-img" class="about-img" src="/images/image-of-founder@2x.png" alt="">
         </section>
     </main>
     <footer>
-        <a class="contact-foot-link nav-link footer-nav-links" href="/MOD1Project_Moodie/pages/contact-us.html">Contact</a>
-        <a class="site-map-foot-link nav-link footer-nav-links" href="/MOD1Project_Moodie/pages/sitemap.html">Site Map</a>
-        <a class="about-foot-link nav-link footer-nav-links" href="/MOD1Project_Moodie/pages/about.html">About</a>
+        <a class="contact-foot-link nav-link footer-nav-links" href="/pages/contact-us.html">Contact</a>
+        <a class="site-map-foot-link nav-link footer-nav-links" href="/pages/sitemap.html">Site Map</a>
+        <a class="about-foot-link nav-link footer-nav-links" href="/pages/about.html">About</a>
         <div id="social-links">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
             <a href="#"><i class="fab fa-twitter"></i></a>
@@ -115,7 +124,7 @@
             <a href="#"><i class="fab fa-youtube"></i></a>
         </div>
         <div id="license">
-            <img id="moodie-logo" src="/MOD1Project_Moodie/images/Moodie-logo.png" alt="">
+            <img id="moodie-logo" src="/images/Moodie-logo.png" alt="">
             <p class="copyright">©2021 Moodie, Inc.</p>
         </div>
     </footer>
