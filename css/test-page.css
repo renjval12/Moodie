@@ -306,3 +306,6 @@ div:hover .image {
         align-content: center;
     }
 }
+img#moodie-logo {
+    max-width: 50%
+}

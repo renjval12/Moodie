@@ -102,14 +102,14 @@ footer {
     -webkit-text-fill-color: transparent;
 }
 
-/* .search-bar {
+.search-bar {
     display: flex;
     justify-content: end;
-} */
-
-.search-bar {
-    display: none;
 }
+
+/* .search-bar {
+    display: none;
+} */
 
 #search-input {
     padding-left: 1%;
@@ -172,8 +172,8 @@ a.header-nav-links, a.footer-nav-links {
     color: #0BB7FF
 }
 
-#moodie-logo {
-    width: 50%
+img#moodie-logo {
+    max-width: 50%
 }
 
 .fab {
@@ -183,7 +183,7 @@ a.header-nav-links, a.footer-nav-links {
 /* Beginning of Top of Home Page Section */
 
 main {
-    background: no-repeat url(./images/Background\ Design\ 1@2x.png);
+    background: no-repeat url(/images/Background\ Design\ 1@2x.png);
     background-size: 100%;
 }
 
@@ -209,7 +209,7 @@ main {
     font-size: 1.5rem;
 }
 
-#home-page-start-btn {
+#start-home-btn {
     grid-area: 4/2/5/3;
 }
 
@@ -219,9 +219,9 @@ main {
     display: grid;
     grid-template: repeat(3, min-content)/10% repeat(2, 1fr) 10%;
     align-items: center;
-    background: url(./images/Background\ Design\ 2@2x.png ) no-repeat;
+    background: url(/images/Background\ Design\ 2@2x.png ) no-repeat;
     color: #0BB7FF;
-    padding: 10% 0 0 0;
+    padding: 20% 0 10% 0;
 }
 
 /* Beginning of About Us Introduction Section */
@@ -233,24 +233,18 @@ main {
 
 #about-section-home {
     grid-area: 2/3/3/4;
-    display: grid;
-    grid-template: repeat(3, 1fr)/1fr;
-    align-items: center;
-    justify-items: center;
+    text-align: center;
 }
 
 .about-content {
     padding: 0 15%;
+    margin: 5% 0;
     text-align: center;
 }
 
 .section-heading.about-section {
     grid-area: 2/3/3/4;
     align-self: flex-end;
-}
-
-.about-content {
-    grid-area: 3/3/4/4;
 }
 
 #more-about-us {
@@ -265,7 +259,7 @@ main {
     align-items: center;
     justify-items: center;
     padding: 10% 0%;
-    background: url(./images/Background\ Design\ Blue\ 2@2x.png) no-repeat;
+    background: url(/images/Background\ Design\ Blue\ 2@2x.png) no-repeat;
     background-size: cover;
     background-color: white;
     color: black;
@@ -312,7 +306,7 @@ main {
     grid-area: 2/5/3/6;
 }
 
-#see-all-tests-btn {
+#see-all-btn {
     grid-area: 4/3/5/5;
     align-self: center;
     justify-self: center;
@@ -335,6 +329,10 @@ main {
 
 #about-heading {
     padding: 10% 0 1% 0;
+}
+
+.read-more-link {
+    color: black;
 }
 
 #about-moodie-section-heading {
@@ -361,7 +359,7 @@ main {
     gap: 5%;
     justify-items: center;
     padding: 10% 5%;
-    background: url(./images/Background\ Design\ 2@2x.png ) no-repeat;
+    background: url(/images/Background\ Design\ 2@2x.png ) no-repeat;
     color: #0BB7FF
 }
 
@@ -401,14 +399,14 @@ main {
     justify-items: center;
     gap: 5%;
     padding: 5% 0 10% 0;
-    background: url(./images/Background\ Design\ Blue\ 2@2x.png) no-repeat;
+    background: url(/images/Background\ Design\ Blue\ 2@2x.png) no-repeat;
     background-size: cover;
     background-color: white;
     padding: 15% 0;
     text-align: center;
 }
 
-#about-the-founder-desc,#about-moodie-desc {
+#about-the-founder-desc, #about-moodie-desc {
     grid-area: 1/3/3/4;
     text-align: center;
 }
@@ -521,7 +519,7 @@ main {
 /* Test Pages */
 
 .test-intro {
-    background: url(./images/Background\ Design\ Blue\ 2@2x.png) no-repeat;
+    background: url(/images/Background\ Design\ Blue\ 2@2x.png) no-repeat;
     background-size: 110%;
     background-color: white;
 }
@@ -688,79 +686,108 @@ textarea::placeholder {
     max-width: 200px;
 }
 
-.btn {
-    border: none;
-    font-family: 'changa';
-    background: none;
-    cursor: pointer;
-    padding: 5px 10px;
-    display: inline-block;
-    margin: 15px 30px;
-    /* text-transform: uppercase; */
-    font-weight: 400;
+button a {
+    color: black;
+    text-decoration: none;
+}
+
+button a.read-more-link {
     outline: none;
-    /* position: relative; */
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
+    margin: 0;
+    background: linear-gradient(#eee, #c0c0c0);
+    border-radius: .25em;
+    cursor: pointer;
+    border: 0;
+    padding: .4em .8em;
+    text-rendering: optimizeLegibility;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: 300;
+    color: inherit;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+    text-shadow: 0 1px rgba(255, 255, 255, 0.5)
 }
 
-.btn-1 {
-    background: #0BB7FF;
-    box-shadow: 0 6px #98b8c6c2;
-    -webkit-transition: none;
-    -moz-transition: none;
-    transition: none;
+button a.read-more-link:hover {
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2), 0 .08em .24em rgba(0, 0, 0, 0.3)
 }
 
-.btn-1 a, .btn-2 a {
-    color: black;
+button a.read-more-link:active {
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2), inset 0 .08em .24em rgba(0, 0, 0, 0.3)
 }
 
-.btn-1 {
-    border-radius: 20px;
+@media (max-width: 500px) {
+    section#top-home-page {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        padding: 20% 0;
+    }
+    #tagline-heading {
+        padding: 0;
+        margin: 0;
+        align-self: center;
+        font-size: 1.5rem;
+    }
+    #home-page-blurb {
+        padding: 5% 20%;
+    }
+    #middle-home-page {
+        display: flex;
+        padding: 10% 5%;
+        margin: 0;
+        background: white;
+    }
+    #bottom-home-page {
+        display: flex;
+        flex-direction: column;
+    }
+    #img-of-about {
+        display: none;
+    }
+    img.test-img {
+        max-width: 30%;
+        padding: 5% 0;
+    }
+    .test-subheading {
+        color: white;
+    }
+    #license {
+        grid-area: 2/2/3/5;
+        display: grid;
+        grid-template: repeat(2, 1fr)/1fr;
+        justify-items: center;
+        gap: 1%;
+        padding: 1%;
+    }
+    #moodie-logo {
+        width: 50%;
+    }
+    #moodie-name {
+    grid-area: 1/2/2/4;   
+    text-align: center;
+    justify-self: center;
+    }
+    #header-nav ul {
+        display: grid;
+        grid-template: repeat(2, 1fr)/repeat(4, 1fr);
+        justify-items: center;
+    }
+    a.header-nav-link {
+        grid-row: 2;
+    }
 }
 
-.btn-1:hover {
-    box-shadow: 0 4px #ffffff;
-    /* top: 2px; */
-}
-
-.btn-1:active {
-    box-shadow: 0 0 #0e85b8;
-    top: 6px;
-}
-
-/* a.blue-blk-btn {
-    color: black;
-    background-color: #0BB7FF;
-}
-
-.white-blk-btn {
-    color: white;
-    background-color: black;
-}
-
-.blk-white-btn {
-    color: black;
-    background-color: white;
-}
-
-.blue-white-btn {
-    color: #0BB7FF;
-    background-color: white;
-} */
-
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     html, body, main, section, div, footer, nav, h1, h2, h3, img, p, input, header, a, label {
         margin: 0;
         padding: 0;
         font-size: 100%;
         font-family: 'Changa', sans-serif;
     }
-    /* .search-bar {
+    .search-bar {
         display: none;
-    } */
+    }
     .header-nav-links {
         justify-self: center;
     }
@@ -770,9 +797,12 @@ textarea::placeholder {
     .choose-a-test-img {
         max-width: 100%;
     }
+    #top-home-page {
+        padding: 10% 0;
+    }
     #middle-home-page {
         grid-template: 1fr/1fr;
-        padding: 0;
+        padding: 10% 5%;
         margin: 0;
         background: white;
     }
@@ -780,8 +810,7 @@ textarea::placeholder {
         max-width: 100%
     }
     #bottom-home-page {
-        background-size: cover;
-        grid-template: 1fr/1fr;
+        background-color: #0BB7FF;
     }
     /* #about-section-home {
         display: flex;
@@ -790,11 +819,11 @@ textarea::placeholder {
         flex-wrap: nowrap;
         padding: 10% 0;
         background-size: 100%;
-    }
+    }*/
     .test-img {
-        max-width: 50%;
+        max-width: 60%;
     }
-    #about-the-tests {
+    /* #about-the-tests {
         display: flex;
         flex-direction: column;
     }
@@ -802,5 +831,5 @@ textarea::placeholder {
         display: flex;
         flex-direction: column;
         padding: 0 5%;
-    } */
+    }  */
 }

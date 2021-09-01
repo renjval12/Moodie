@@ -1,19 +1,19 @@
 ﻿let pageLinks = [
     {
         name: 'Home',
-        url: './index.html'
+        url: '/index.html'
     },
     {
         name: 'About',
-        url: './pages/about.html'
+        url: '/pages/about.html'
     },
     {
         name: 'Choose a Test',
-        url: './pages/personality-test-page.html'
+        url: '/pages/personality-test-page.html'
     },
     {
         name: 'Contact',
-        url: './pages/contact-us.html'
+        url: '/pages/contact-us.html'
     }
 ]
 
@@ -24,7 +24,7 @@ class NavBar extends React.Component {
         return (
             <nav id="header-nav">
                 <ul>
-                    <img id="masks-icon" src="./images/Drama-icon.png" />
+                    <img id="masks-icon" src="/images/Drama-icon.png" />
                     <li><h1><a id="moodie-name" href={pageLinks[0].url}>Moodie</a></h1></li>
                     {headerLinks}
                     <li>
@@ -40,8 +40,6 @@ class NavBar extends React.Component {
         )
     }
 }
-
-alert('this is new')
 
 // let tests = [
 //     {
