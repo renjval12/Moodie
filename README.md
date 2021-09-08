@@ -9,4 +9,4 @@ Prototype: https://xd.adobe.com/view/fa4f87c2-b7a2-49ad-577a-478463460447-8c7e/
 
 https://github.com/renjval12/MOD1Project_Moodie
 
-this project is a WORK IN PROGRESS
+This project is a WORK IN PROGRESS
