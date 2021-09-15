@@ -1,7 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-family: 'Changa', sans-serif;
+}
 
 body {
     color: white;
-    /* background: black; */
+    background: black;
 }
 
 header, footer {
@@ -49,9 +55,8 @@ header, footer {
     display: flex;
     justify-content: end;
 }
-
 @media (max-width: 800px) {
-    .search-bar {
+    .search-bar{
         display: none;
     }
 }
@@ -176,7 +181,6 @@ a.header-nav-links, a.footer-nav-links {
 #moodie-logo {
     width: 100%
 }
-
 @media (max-width: 800px) {
     #moodie-logo {
         width: 5rem;
