@@ -166,7 +166,7 @@ a.header-nav-links, a.footer-nav-links {
 }
 
 #license {
-    grid-area: 2/3/3/4;
+    grid-area: 2/2/3/5;
     display: grid;
     grid-template: repeat(2, 1fr)/1fr;
     justify-items: center;
@@ -178,16 +178,15 @@ a.header-nav-links, a.footer-nav-links {
     grid-area: 3/3/4/4;
     color: #0BB7FF
 }
-
 #moodie-logo {
-    width: 100%
+    width: 8vw;
 }
-
 @media (max-width: 800px) {
     #moodie-logo {
-        width: 5rem;
+        width: 15vw;
     }
 }
+
 
 .fab {
     color: #0BB7FF;
@@ -779,9 +778,6 @@ textarea::placeholder {
         justify-items: center;
         gap: 1%;
         padding: 1%;
-    }
-    #moodie-logo {
-        width: 50%;
     }
     #moodie-name {
         grid-area: 1/2/2/4;
