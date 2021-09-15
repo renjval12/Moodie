@@ -55,8 +55,9 @@ header, footer {
     display: flex;
     justify-content: end;
 }
+
 @media (max-width: 800px) {
-    .search-bar{
+    .search-bar {
         display: none;
     }
 }
@@ -181,6 +182,7 @@ a.header-nav-links, a.footer-nav-links {
 #moodie-logo {
     width: 100%
 }
+
 @media (max-width: 800px) {
     #moodie-logo {
         width: 5rem;
@@ -190,6 +192,7 @@ a.header-nav-links, a.footer-nav-links {
 .fab {
     color: #0BB7FF;
 }
+
 /* Beginning of Top of Home Page Section */
 
 main {
@@ -650,21 +653,58 @@ input[type="radio"] {
     }
 }
 
-/* one offs */
+/* global properties */
 
-button, input[type="submit"] {
-    width: max-content;
-    height: max-content;
-    padding: .25em 2em;
-    border-radius: 50px;
+/* buttons */
+
+button {
+    padding: 5px 10px;
+    border-width: 0px;
+    border-radius: 5px;
+}
+
+button a {
+    text-decoration: none;
+}
+
+.blk-blue-btn {
+    background-color: #0bb7ff;
+}
+
+.blk-blue-btn:hover {
+    background-color: white;
+}
+
+.blk-blue-btn a {
+    color: black;
+}
+
+.white-blk-btn {
+    background-color: black;
+}
+
+.white-blk-btn:hover {
+    background-color: #0bb7ff;
+}
+
+.white-blk-btn a {
+    color: white;
+}
+
+.blue-blk-btn {
+    background-color: black;
+}
+
+.blue-blk-btn:hover {
+    background-color: white;
+}
+
+.blue-blk-btn a {
+    color: #0bb7ff;
 }
 
 input[type="submit"] {
     display: block;
-}
-
-.btn-link {
-    text-decoration: none;
 }
 
 .top-of-page-heading {
@@ -694,36 +734,6 @@ textarea::placeholder {
 
 .test-img {
     max-width: 200px;
-}
-
-button a {
-    color: black;
-    text-decoration: none;
-}
-
-button a.read-more-link {
-    outline: none;
-    margin: 0;
-    background: linear-gradient(#eee, #c0c0c0);
-    border-radius: .25em;
-    cursor: pointer;
-    border: 0;
-    padding: .4em .8em;
-    text-rendering: optimizeLegibility;
-    font-size: inherit;
-    font-family: inherit;
-    font-weight: 300;
-    color: inherit;
-    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
-    text-shadow: 0 1px rgba(255, 255, 255, 0.5)
-}
-
-button a.read-more-link:hover {
-    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2), 0 .08em .24em rgba(0, 0, 0, 0.3)
-}
-
-button a.read-more-link:active {
-    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2), inset 0 .08em .24em rgba(0, 0, 0, 0.3)
 }
 
 @media (max-width: 500px) {
@@ -774,9 +784,9 @@ button a.read-more-link:active {
         width: 50%;
     }
     #moodie-name {
-    grid-area: 1/2/2/4;   
-    text-align: center;
-    justify-self: center;
+        grid-area: 1/2/2/4;
+        text-align: center;
+        justify-self: center;
     }
     #header-nav ul {
         display: grid;
